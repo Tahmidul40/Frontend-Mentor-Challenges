@@ -1,0 +1,62 @@
+.productive {
+  background: $Dark-Blue-2;
+  padding: 50px 0;
+  margin-top: -1px;
+
+  .container {
+    margin: 0 120px;
+
+    .wrapper {
+      display: flex;
+      align-items: center;
+
+      .productive-content {
+        padding-left: 60px;
+
+        h2 {
+          font-size: 2rem;
+        }
+
+        p {
+          margin: 20px 0;
+        }
+
+        .pro-btn {
+          display: flex;
+          align-items: center;
+          position: relative;
+
+          a {
+            color: $Cyan;
+            margin-right: 10px;
+          }
+
+          &::after {
+            content: "";
+            width: 153px;
+            height: 2px;
+            background: $Cyan;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            z-index: -999;
+          }
+
+          &:hover {
+            a {
+              color: $White;
+            }
+
+            circle#b {
+              fill: $White;
+            }
+
+            &::after {
+              background: $White;
+            }
+          }
+        }
+      }
+    }
+  }
+}

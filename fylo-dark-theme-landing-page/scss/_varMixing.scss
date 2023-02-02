@@ -1,0 +1,32 @@
+// Primary
+// (intro and email sign up background)
+$Dark-Blue-1: hsl(217, 28%, 15%);
+// (main background)
+$Dark-Blue-2: hsl(218, 28%, 13%);
+// (footer background)
+$Dark-Blue-3: hsl(216, 53%, 9%);
+// (testimonials background)
+$Dark-Blue-4: hsl(219, 30%, 18%);
+
+// Accent
+// (inside call-to-action gradient)
+$Cyan: hsl(176, 68%, 64%);
+// (inside call-to-action gradient)
+$Blue: hsl(198, 60%, 50%);
+// (error)
+$Light-Red: hsl(0, 100%, 63%);
+
+// Neutral
+$White: hsl(0, 0%, 100%);
+
+// btn
+.btn {
+  font-weight: 700;
+  padding: 18px 95px;
+  background: $Blue;
+  border-radius: 30px;
+
+  &:hover {
+    background: $Cyan;
+  }
+}
