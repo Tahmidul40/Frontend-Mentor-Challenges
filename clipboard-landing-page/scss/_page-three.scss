@@ -1,0 +1,26 @@
+.page-three {
+  padding: 130px 0 0;
+
+  .three-heading {
+    text-align: center;
+
+    h2 {
+      font-size: 40px;
+      font-weight: 600;
+      margin: 0px 0px 20px;
+      color: $Dark-Grayish-Blue;
+    }
+
+    p {
+      max-width: 690px;
+      margin: auto;
+      color: $Grayish-Blue;
+    }
+  }
+
+  .three-content {
+    max-width: 810px;
+    margin: auto;
+    margin-top: 100px;
+  }
+}

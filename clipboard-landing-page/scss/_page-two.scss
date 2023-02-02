@@ -1,0 +1,68 @@
+.page-two {
+  padding: 130px 0 30px;
+
+  .two-heading {
+    text-align: center;
+
+    h2 {
+      font-size: 40px;
+      font-weight: 600;
+      margin: 0px 0px 20px;
+      color: $Dark-Grayish-Blue;
+    }
+
+    p {
+      max-width: 690px;
+      margin: auto;
+      color: $Grayish-Blue;
+    }
+  }
+
+  .two-content {
+    display: flex;
+    margin-top: 80px;
+
+    .two-left {
+      max-width: 54.999%;
+
+      img {
+        max-width: 100%;
+        height: 100%;
+        margin-left: -40px;
+      }
+    }
+
+    .two-right {
+      max-width: 46.999%;
+      padding-left: 70px;
+
+      .snippet {
+        h3 {
+          font-size: 26px;
+          color: $Dark-Grayish-Blue;
+          margin-bottom: 16px;
+        }
+
+        p {
+          max-width: 400px;
+          color: $Grayish-Blue;
+          line-height: 1.5;
+          letter-spacing: 0.5px;
+        }
+      }
+
+      .s-one {
+        padding-top: 75px;
+        padding-bottom: 60px;
+      }
+
+      .s-two {
+        padding-bottom: 60px;
+      }
+
+      .s-three {
+        padding-bottom: 60px;
+      }
+    }
+  }
+}

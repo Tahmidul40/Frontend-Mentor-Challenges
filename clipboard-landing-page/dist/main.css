@@ -1,0 +1,657 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 18px;
+}
+
+body img {
+  width: 100%;
+}
+
+body li {
+  list-style-type: none;
+}
+
+body a {
+  text-decoration: none;
+  color: #000;
+}
+
+.container {
+  max-width: 1110px;
+  height: 100%;
+  margin: auto;
+}
+
+.landing {
+  padding: 130px 0 30px;
+  background: url("../images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+}
+
+.landing .logo {
+  width: 125px;
+  height: 125px;
+  margin: auto;
+}
+
+.landing .landing-title {
+  text-align: center;
+}
+
+.landing .landing-title h1 {
+  font-size: 40px;
+  margin: 40px 0px 20px;
+  color: #4c545d;
+}
+
+.landing .landing-title p {
+  max-width: 620px;
+  margin: auto;
+  color: #9fabb2;
+}
+
+.landing .landing-btn {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+}
+
+.landing .landing-btn a {
+  padding: 22px 38px 18px;
+  border-radius: 50px;
+  margin-right: 16px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.landing .landing-btn a:first-child {
+  background-color: #26baa4;
+  border-bottom: 3px solid #138e7f;
+}
+
+.landing .landing-btn a:last-child {
+  background-color: #6173ff;
+  border-bottom: 3px solid #3d4dc9;
+}
+
+.page-two {
+  padding: 130px 0 30px;
+}
+
+.page-two .two-heading {
+  text-align: center;
+}
+
+.page-two .two-heading h2 {
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0px 0px 20px;
+  color: #4c545d;
+}
+
+.page-two .two-heading p {
+  max-width: 690px;
+  margin: auto;
+  color: #9fabb2;
+}
+
+.page-two .two-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 80px;
+}
+
+.page-two .two-content .two-left {
+  max-width: 54.999%;
+}
+
+.page-two .two-content .two-left img {
+  max-width: 100%;
+  height: 100%;
+  margin-left: -40px;
+}
+
+.page-two .two-content .two-right {
+  max-width: 46.999%;
+  padding-left: 70px;
+}
+
+.page-two .two-content .two-right .snippet h3 {
+  font-size: 26px;
+  color: #4c545d;
+  margin-bottom: 16px;
+}
+
+.page-two .two-content .two-right .snippet p {
+  max-width: 400px;
+  color: #9fabb2;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+}
+
+.page-two .two-content .two-right .s-one {
+  padding-top: 75px;
+  padding-bottom: 60px;
+}
+
+.page-two .two-content .two-right .s-two {
+  padding-bottom: 60px;
+}
+
+.page-two .two-content .two-right .s-three {
+  padding-bottom: 60px;
+}
+
+.page-three {
+  padding: 130px 0 0;
+}
+
+.page-three .three-heading {
+  text-align: center;
+}
+
+.page-three .three-heading h2 {
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0px 0px 20px;
+  color: #4c545d;
+}
+
+.page-three .three-heading p {
+  max-width: 690px;
+  margin: auto;
+  color: #9fabb2;
+}
+
+.page-three .three-content {
+  max-width: 810px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.page-four {
+  padding: 90px 0 30px;
+}
+
+.page-four .four-heading {
+  text-align: center;
+}
+
+.page-four .four-heading h2 {
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0px 0px 20px;
+  color: #4c545d;
+}
+
+.page-four .four-heading p {
+  max-width: 690px;
+  margin: auto;
+  color: #9fabb2;
+}
+
+.page-four .four-content {
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.page-four .four-content .four-cont {
+  max-width: 350px;
+}
+
+.page-four .four-content .four-cont .four-cont-img {
+  padding: 50px 150px;
+}
+
+.page-four .four-content .four-cont:first-child .four-cont {
+  margin-right: 20px;
+}
+
+.page-four .four-content .four-cont:last-child .four-cont-img {
+  padding: 55px 150px;
+}
+
+.page-four .four-content .four-cont .four-cont-title {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.page-four .four-content .four-cont .four-cont-title h3 {
+  font-size: 26px;
+  color: #4c545d;
+  margin-bottom: 16px;
+}
+
+.page-four .four-content .four-cont .four-cont-title p {
+  color: #9fabb2;
+  line-height: 1.5;
+}
+
+.page-four .brand-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 100px;
+}
+
+.page-five {
+  padding: 130px 0 30px;
+}
+
+.page-five .five-heading {
+  text-align: center;
+}
+
+.page-five .five-heading h2 {
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0px 0px 20px;
+  color: #4c545d;
+}
+
+.page-five .five-heading p {
+  max-width: 690px;
+  margin: auto;
+  color: #9fabb2;
+}
+
+.page-five .five-btn {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.page-five .five-btn a {
+  padding: 22px 38px 18px;
+  border-radius: 50px;
+  margin-right: 16px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.page-five .five-btn a:first-child {
+  background-color: #26baa4;
+  border-bottom: 3px solid #138e7f;
+}
+
+.page-five .five-btn a:last-child {
+  background-color: #6173ff;
+  border-bottom: 3px solid #3d4dc9;
+}
+
+footer {
+  height: 150px;
+  background: #f5f6f8;
+}
+
+footer .footer-flex {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-flex .footer-img {
+  width: 50px;
+  height: 50px;
+}
+
+footer .footer-flex .footer-links {
+  width: 480px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer-flex .footer-links div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .footer-flex .footer-links div a:first-child {
+  padding-bottom: 20px;
+}
+
+footer .footer-flex .attri {
+  text-align: center;
+  color: #3e52a3;
+}
+
+footer .footer-flex .attri p:first-child {
+  padding-bottom: 20px;
+}
+
+footer .footer-flex .footer-icons i {
+  width: 24px;
+  margin-left: 12px;
+}
+
+footer a:hover {
+  color: #26baa4;
+}
+
+@media (max-width: 1399.98px) {
+  .page-two .two-content .two-left img {
+    max-height: 100%;
+  }
+  .page-two .two-content .two-right {
+    padding-left: 0px;
+  }
+  .page-two .two-content .two-right .s-one {
+    padding-top: 55px;
+    padding-bottom: 40px;
+  }
+  .page-two .two-content .two-right .s-two {
+    padding-bottom: 40px;
+  }
+  .page-two .two-content .two-right .s-three {
+    padding-bottom: 60px;
+  }
+  .page-four {
+    padding: 0 80px;
+  }
+  .page-four .four-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .page-four .four-content .four-cont:first-child {
+    margin-right: 20px;
+  }
+  .page-four .brand-logo {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .page-four .brand-logo div {
+    padding-bottom: 50px;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  footer {
+    height: 100%;
+    padding: 0 80px;
+  }
+  footer .footer-flex {
+    max-height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .footer-flex .footer-img {
+    margin: 25px 0;
+  }
+  footer .footer-flex .footer-links {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .footer-flex .footer-links div {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 0 25px;
+  }
+  footer .footer-flex .footer-links div a:first-child {
+    margin-right: 25px;
+  }
+  footer .footer-flex .attri {
+    text-align: center;
+  }
+  footer .footer-flex .attri p {
+    padding-bottom: 10px;
+  }
+  footer .footer-flex .attri p:first-child {
+    padding-bottom: 0px;
+  }
+  footer .footer-flex .footer-icons {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  footer .footer-flex .footer-icons i {
+    width: 24px;
+    margin-left: 12px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .page-two {
+    padding-bottom: 0;
+  }
+  .page-two .two-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .page-two .two-content .two-left {
+    max-width: 100%;
+  }
+  .page-two .two-content .two-left img {
+    padding: 0 100px;
+    margin-left: 0px;
+  }
+  .page-two .two-content .two-right {
+    max-width: 100%;
+    text-align: center;
+  }
+  .page-two .two-content .two-right .snippet p {
+    max-width: 400px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 767.98px) {
+  body {
+    font-size: 18px;
+  }
+  .landing {
+    padding: 80px 0 75px;
+    background: url("../images/bg-header-mobile.png");
+    background-size: cover;
+  }
+  .landing .landing-title {
+    max-width: 90%;
+    margin: auto;
+  }
+  .landing .landing-title h1 {
+    font-size: 40px;
+    margin: 30px 0px 15px;
+  }
+  .landing .landing-btn {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 30px;
+  }
+  .landing .landing-btn a {
+    padding: 22px 100px 18px;
+    border-radius: 50px;
+    margin-right: 0;
+    margin-bottom: 16px;
+    font-weight: 600;
+  }
+  .page-two {
+    max-width: 90%;
+    margin: auto;
+    padding: 25px 0 75px;
+  }
+  .page-two .two-content {
+    margin-top: 50px;
+  }
+  .page-two .two-content .two-left img {
+    padding: 0 100px;
+    margin-left: 0px;
+  }
+  .page-two .two-content .two-right {
+    max-width: 100%;
+    text-align: center;
+  }
+  .page-two .two-content .two-right .s-one {
+    padding: 40px 0;
+  }
+  .page-three {
+    max-width: 90%;
+    margin: auto;
+    padding: 0 0 75px;
+  }
+  .page-three .three-content {
+    margin-top: 50px;
+  }
+  .page-four {
+    max-width: 90%;
+    margin: auto;
+    padding: 0 0 75px;
+  }
+  .page-four .four-heading p {
+    padding-bottom: 20px;
+  }
+  .page-four .four-content .four-cont .four-cont-img {
+    padding: 25px 140px;
+  }
+  .page-four .four-content .four-cont .four-cont-title {
+    padding-bottom: 30px;
+  }
+  .page-four .four-content .four-cont:first-child {
+    margin-right: 0px;
+  }
+  .page-four .brand-logo {
+    padding-top: 50px;
+    padding-bottom: 25px;
+  }
+  .page-four .brand-logo div {
+    padding-bottom: 50px;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  .page-five {
+    max-width: 90%;
+    margin: auto;
+    padding: 0 0 75px;
+  }
+  .page-five .five-btn {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+  .page-five .five-btn a {
+    padding: 22px 90px 18px;
+    border-radius: 50px;
+    margin-right: 0;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  footer {
+    height: auto;
+    line-height: 2;
+    text-align: center;
+  }
+  footer .footer-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .footer-flex .footer-img {
+    margin: 20px 0;
+  }
+  footer .footer-flex .footer-links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .footer-flex .footer-links div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+  }
+  footer .footer-flex .footer-links div a:first-child {
+    padding-bottom: 0px;
+    margin: 0;
+  }
+  footer .footer-flex .footer-icons {
+    padding-bottom: 20px;
+    padding-top: 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */

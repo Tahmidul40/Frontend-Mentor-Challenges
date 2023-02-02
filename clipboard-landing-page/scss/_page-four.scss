@@ -1,0 +1,68 @@
+.page-four {
+  padding: 90px 0 30px;
+
+  .four-heading {
+    text-align: center;
+
+    h2 {
+      font-size: 40px;
+      font-weight: 600;
+      margin: 0px 0px 20px;
+      color: $Dark-Grayish-Blue;
+    }
+
+    p {
+      max-width: 690px;
+      margin: auto;
+      color: $Grayish-Blue;
+    }
+  }
+
+  .four-content {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+
+    .four-cont {
+      max-width: 350px;
+
+      .four-cont-img {
+        padding: 50px 150px;
+      }
+
+      &:first-child {
+        .four-cont {
+          margin-right: 20px;
+        }
+      }
+
+      &:last-child {
+        .four-cont-img {
+          padding: 55px 150px;
+        }
+      }
+
+      .four-cont-title {
+        text-align: center;
+        padding-bottom: 50px;
+
+        h3 {
+          font-size: 26px;
+          color: $Dark-Grayish-Blue;
+          margin-bottom: 16px;
+        }
+
+        p {
+          color: $Grayish-Blue;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+
+  .brand-logo {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+  }
+}

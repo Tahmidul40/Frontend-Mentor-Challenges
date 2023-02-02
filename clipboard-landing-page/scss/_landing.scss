@@ -1,0 +1,61 @@
+.container {
+  max-width: 1110px;
+  height: 100%;
+  margin: auto;
+}
+
+.landing {
+  padding: 130px 0 30px;
+  background: url("../images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+
+  .logo {
+    width: 125px;
+    height: 125px;
+    margin: auto;
+  }
+
+  .landing-title {
+    text-align: center;
+
+    h1 {
+      font-size: 40px;
+      margin: 40px 0px 20px;
+      color: $Dark-Grayish-Blue;
+    }
+
+    p {
+      max-width: 620px;
+      margin: auto;
+      color: $Grayish-Blue;
+    }
+  }
+
+  .landing-btn {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+    a {
+      padding: 22px 38px 18px;
+      border-radius: 50px;
+      margin-right: 16px;
+      font-weight: 600;
+      color: #fff;
+
+      &:first-child {
+        background-color: $Strong-Cyan;
+        border-bottom: 3px solid #138e7f;
+      }
+
+      &:last-child {
+        background-color: $Light-Blue;
+        border-bottom: 3px solid #3d4dc9;
+      }
+    }
+  }
+}
