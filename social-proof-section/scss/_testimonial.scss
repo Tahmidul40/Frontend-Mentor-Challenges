@@ -1,0 +1,44 @@
+.test {
+  max-width: 1210px;
+  margin: auto;
+  padding: 0px 50px 0px 50px;
+  padding-bottom: 80px;
+
+  .testimonial {
+    .t-wrap {
+      .t-one,
+      .t-two,
+      .t-three {
+        width: 350px;
+        height: 235px;
+        background-color: $Very-Dark-Magenta;
+        padding: 40px 32px;
+        font-size: 13px;
+        border-radius: 10px;
+        color: #fff;
+        .t-head {
+          display: flex;
+          padding-bottom: 30px;
+          img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+          }
+          .t-name {
+            padding-left: 20px;
+            h3 {
+              font-size: 13px;
+              font-weight: 700;
+              padding-top: 8px;
+              margin-bottom: 0;
+            }
+            p {
+              margin-bottom: 0;
+              color: $Soft-Pink;
+            }
+          }
+        }
+      }
+    }
+  }
+}
