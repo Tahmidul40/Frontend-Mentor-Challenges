@@ -1,0 +1,80 @@
+footer {
+  width: 100%;
+  padding: 200px 0 100px;
+  background-color: $Dark-moderate-cyan;
+
+  .footerContainer {
+    text-align: center;
+
+    .footerContent {
+      display: flex;
+      flex-direction: column;
+
+      .footerLogo {
+        img {
+          width: 200px;
+        }
+      }
+
+      .footerNavbar {
+        .footerNav {
+          display: flex;
+          justify-content: center;
+          padding: 30px 0;
+
+          .navItem {
+            text-transform: capitalize;
+
+            a {
+              color: $Dark-desaturated-cyan;
+
+              &:hover {
+                color: $White;
+              }
+            }
+          }
+
+          .ml {
+            margin-left: 40px;
+          }
+        }
+      }
+
+      .footerIcons {
+        .footerIconList {
+          display: flex;
+          justify-content: center;
+          margin: 30px 0 50px;
+
+          .lnkIcon {
+            a {
+              margin-left: 25px;
+
+              img {
+                width: 20px;
+              }
+            }
+          }
+
+          .noMn {
+            margin-left: 0;
+          }
+        }
+      }
+
+      .attribution {
+        font-size: 12px;
+        text-align: center;
+        letter-spacing: 1px;
+
+        a {
+          color: hsl(228, 45%, 44%);
+
+          &:hover {
+            color: $White;
+          }
+        }
+      }
+    }
+  }
+}
