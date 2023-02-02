@@ -1,0 +1,126 @@
+.card {
+  @media only screen and (min-width: 625px) {
+    padding: 150px 0px;
+  }
+
+  .container {
+    width: 343px;
+    background-color: $White;
+    margin: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 20px auto;
+
+    @media screen and (min-width: 768px) {
+      width: 600px;
+      height: 450px;
+      display: flex;
+      border-radius: 16px;
+    }
+
+    .card-img {
+      height: 240px;
+      background-image: url(/images/image-product-mobile.jpg);
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      @media screen and (min-width: 768px) {
+        width: 300px;
+        height: 450px;
+        background-image: url(/images/image-product-desktop.jpg);
+      }
+    }
+
+    .card-info {
+      padding: 25px;
+
+      @media screen and (min-width: 768px) {
+        width: 300px;
+        height: 450px;
+        padding: 32px;
+      }
+
+      .card-title {
+        h4 {
+          text-transform: uppercase;
+          color: $Dark-grayish-blue;
+          font-weight: 500;
+          letter-spacing: 6px;
+        }
+
+        h1 {
+          font-family: $fraunces;
+          font-size: 30px;
+          margin: 14px 0;
+          color: $Very-dark-blue;
+
+          @media screen and (min-width: 768px) {
+            margin: 20px 0 25px;
+          }
+        }
+
+        p {
+          color: $Dark-grayish-blue;
+          line-height: 1.6;
+          // padding: 10px 0 25px;
+          padding-bottom: 15px;
+
+          @media screen and (min-width: 768px) {
+            padding-bottom: 30px;
+          }
+        }
+      }
+
+      .cart {
+        .price {
+          display: flex;
+          align-items: center;
+          margin-bottom: 16px;
+
+          .price1 {
+            font-family: $fraunces;
+            font-size: 32px;
+            color: $Dark-cyan;
+            margin-right: 16px;
+          }
+
+          .price2 {
+            color: $Dark-grayish-blue;
+          }
+        }
+
+        .add-to-cart {
+          background-color: $Dark-cyan;
+          color: $White;
+          padding: 14px 0;
+          text-align: center;
+          width: 100%;
+          border: none;
+          font-weight: 700;
+          border-radius: 8px;
+
+          &:hover {
+            background-color: $hover;
+            cursor: pointer;
+          }
+
+          svg {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// attribution
+.attribution {
+  font-size: 11px;
+  text-align: center;
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+  padding-bottom: 10px;
+}
