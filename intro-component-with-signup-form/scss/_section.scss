@@ -1,0 +1,125 @@
+body {
+  background-color: $Red;
+}
+
+section {
+  background: url(../images/bg-intro-desktop.png);
+  max-width: 100%;
+  height: 100%;
+
+  .wrapper {
+    display: flex;
+
+    .heading {
+      width: 49.999%;
+      padding: 300px 60px 300px 0px;
+      color: #fff;
+      font-size: 0.9rem;
+
+      h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 40px;
+      }
+    }
+
+    .form-sec {
+      width: 49.999%;
+      padding: 120px 0;
+
+      .seven-day {
+        background-color: $Blue;
+        border-radius: 10px;
+        margin-bottom: 22.5px;
+        box-shadow: 0px 6px 0px 0px $Shadow;
+
+        &:hover {
+          background-color: hsl(248, 33%, 51%);
+        }
+
+        a {
+          width: 100%;
+          height: 100%;
+          font-size: 0.9rem;
+          padding: 20px 20px;
+          color: #fff;
+          box-shadow: none;
+
+          span {
+            font-weight: 600;
+          }
+        }
+      }
+
+      #from {
+        width: 100%;
+        padding: 40px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 6px 0px 0px $Shadow;
+
+        .first-name,
+        .last-name,
+        .email-div,
+        .password-div {
+          width: 100%;
+          margin-bottom: 20px;
+
+          input {
+            padding: 20px 30px;
+            border-radius: 10px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: $Dark-Blue;
+            border-width: 2px;
+
+            &:focus {
+              border-color: $Dark-Blue;
+              box-shadow: none;
+            }
+
+            &::placeholder {
+              font-weight: 600;
+              font-size: 0.95rem;
+            }
+          }
+        }
+
+        .invalid-feedback {
+          text-align: end;
+          font-style: italic;
+        }
+
+        .submit-btn {
+          width: 100%;
+          background-color: $Green;
+          padding: 20px 0;
+          text-align: center;
+          border-radius: 10px;
+          box-shadow: 0px 6px 0px 0px #34b87e;
+          color: #fff;
+          font-size: 0.95rem;
+          font-weight: 600;
+          margin-bottom: 20px;
+
+          &:focus {
+            box-shadow: none;
+          }
+
+          &:hover {
+            background-color: hsl(154, 71%, 59%);
+          }
+        }
+
+        p {
+          font-size: 0.95rem;
+          color: $Grayish-Blue;
+
+          span {
+            color: $Red;
+          }
+        }
+      }
+    }
+  }
+}

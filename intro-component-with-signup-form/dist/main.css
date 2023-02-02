@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+  max-height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  background-color: #ff7a7a;
+}
+
+section {
+  background: url(../images/bg-intro-desktop.png);
+  max-width: 100%;
+  height: 100%;
+}
+
+section .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section .wrapper .heading {
+  width: 49.999%;
+  padding: 300px 60px 300px 0px;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+section .wrapper .heading h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+section .wrapper .form-sec {
+  width: 49.999%;
+  padding: 120px 0;
+}
+
+section .wrapper .form-sec .seven-day {
+  background-color: #6055a5;
+  border-radius: 10px;
+  margin-bottom: 22.5px;
+  -webkit-box-shadow: 0px 6px 0px 0px #d76668;
+          box-shadow: 0px 6px 0px 0px #d76668;
+}
+
+section .wrapper .form-sec .seven-day:hover {
+  background-color: #6459ab;
+}
+
+section .wrapper .form-sec .seven-day a {
+  width: 100%;
+  height: 100%;
+  font-size: 0.9rem;
+  padding: 20px 20px;
+  color: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+section .wrapper .form-sec .seven-day a span {
+  font-weight: 600;
+}
+
+section .wrapper .form-sec #from {
+  width: 100%;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 6px 0px 0px #d76668;
+          box-shadow: 0px 6px 0px 0px #d76668;
+}
+
+section .wrapper .form-sec #from .first-name,
+section .wrapper .form-sec #from .last-name,
+section .wrapper .form-sec #from .email-div,
+section .wrapper .form-sec #from .password-div {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+section .wrapper .form-sec #from .first-name input,
+section .wrapper .form-sec #from .last-name input,
+section .wrapper .form-sec #from .email-div input,
+section .wrapper .form-sec #from .password-div input {
+  padding: 20px 30px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #3e3c49;
+  border-width: 2px;
+}
+
+section .wrapper .form-sec #from .first-name input:focus,
+section .wrapper .form-sec #from .last-name input:focus,
+section .wrapper .form-sec #from .email-div input:focus,
+section .wrapper .form-sec #from .password-div input:focus {
+  border-color: #3e3c49;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+section .wrapper .form-sec #from .first-name input::-webkit-input-placeholder,
+section .wrapper .form-sec #from .last-name input::-webkit-input-placeholder,
+section .wrapper .form-sec #from .email-div input::-webkit-input-placeholder,
+section .wrapper .form-sec #from .password-div input::-webkit-input-placeholder {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+section .wrapper .form-sec #from .first-name input:-ms-input-placeholder,
+section .wrapper .form-sec #from .last-name input:-ms-input-placeholder,
+section .wrapper .form-sec #from .email-div input:-ms-input-placeholder,
+section .wrapper .form-sec #from .password-div input:-ms-input-placeholder {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+section .wrapper .form-sec #from .first-name input::-ms-input-placeholder,
+section .wrapper .form-sec #from .last-name input::-ms-input-placeholder,
+section .wrapper .form-sec #from .email-div input::-ms-input-placeholder,
+section .wrapper .form-sec #from .password-div input::-ms-input-placeholder {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+section .wrapper .form-sec #from .first-name input::placeholder,
+section .wrapper .form-sec #from .last-name input::placeholder,
+section .wrapper .form-sec #from .email-div input::placeholder,
+section .wrapper .form-sec #from .password-div input::placeholder {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+section .wrapper .form-sec #from .invalid-feedback {
+  text-align: end;
+  font-style: italic;
+}
+
+section .wrapper .form-sec #from .submit-btn {
+  width: 100%;
+  background-color: #38cc8c;
+  padding: 20px 0;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 6px 0px 0px #34b87e;
+          box-shadow: 0px 6px 0px 0px #34b87e;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+section .wrapper .form-sec #from .submit-btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+section .wrapper .form-sec #from .submit-btn:hover {
+  background-color: #4ce1a0;
+}
+
+section .wrapper .form-sec #from p {
+  font-size: 0.95rem;
+  color: #b9b6d3;
+}
+
+section .wrapper .form-sec #from p span {
+  color: #ff7a7a;
+}
+
+footer .attribution {
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+footer .attribution a {
+  color: #3e52a3;
+}
+
+@media (max-width: 1199.98px) {
+  section .wrapper .heading {
+    width: 44.999%;
+  }
+  section .wrapper .form-sec {
+    width: 55.999%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  section .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section .wrapper .heading {
+    width: 100%;
+    padding: 100px 0 80px 0;
+    text-align: center;
+  }
+  section .wrapper .form-sec {
+    width: 100%;
+    padding: 0 0 120px 0;
+  }
+  section .wrapper .form-sec #from {
+    padding: 25px;
+  }
+  section .wrapper .form-sec #from .first-name,
+  section .wrapper .form-sec #from .last-name,
+  section .wrapper .form-sec #from .email-div,
+  section .wrapper .form-sec #from .password-div {
+    margin-bottom: 16px;
+  }
+  section .wrapper .form-sec #from .first-name input,
+  section .wrapper .form-sec #from .last-name input,
+  section .wrapper .form-sec #from .email-div input,
+  section .wrapper .form-sec #from .password-div input {
+    padding: 16px 16px;
+    font-size: 0.9rem;
+  }
+  section .wrapper .form-sec #from .first-name input::-webkit-input-placeholder,
+  section .wrapper .form-sec #from .last-name input::-webkit-input-placeholder,
+  section .wrapper .form-sec #from .email-div input::-webkit-input-placeholder,
+  section .wrapper .form-sec #from .password-div input::-webkit-input-placeholder {
+    font-size: 0.9rem;
+  }
+  section .wrapper .form-sec #from .first-name input:-ms-input-placeholder,
+  section .wrapper .form-sec #from .last-name input:-ms-input-placeholder,
+  section .wrapper .form-sec #from .email-div input:-ms-input-placeholder,
+  section .wrapper .form-sec #from .password-div input:-ms-input-placeholder {
+    font-size: 0.9rem;
+  }
+  section .wrapper .form-sec #from .first-name input::-ms-input-placeholder,
+  section .wrapper .form-sec #from .last-name input::-ms-input-placeholder,
+  section .wrapper .form-sec #from .email-div input::-ms-input-placeholder,
+  section .wrapper .form-sec #from .password-div input::-ms-input-placeholder {
+    font-size: 0.9rem;
+  }
+  section .wrapper .form-sec #from .first-name input::placeholder,
+  section .wrapper .form-sec #from .last-name input::placeholder,
+  section .wrapper .form-sec #from .email-div input::placeholder,
+  section .wrapper .form-sec #from .password-div input::placeholder {
+    font-size: 0.9rem;
+  }
+  section .wrapper .form-sec #from .submit-btn {
+    margin-bottom: 16px;
+  }
+  section .wrapper .form-sec #from p {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  section .container {
+    padding: 0 25px 0 25px;
+  }
+  section .container .heading {
+    padding-bottom: 60px;
+  }
+  section .container .heading h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

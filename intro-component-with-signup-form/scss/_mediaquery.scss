@@ -1,0 +1,82 @@
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+  section {
+    .wrapper {
+      .heading {
+        width: 44.999%;
+      }
+
+      .form-sec {
+        width: 55.999%;
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  section {
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+
+      .heading {
+        width: 100%;
+        padding: 100px 0 80px 0;
+        text-align: center;
+      }
+
+      .form-sec {
+        width: 100%;
+        padding: 0 0 120px 0;
+
+        #from {
+          padding: 25px;
+          .first-name,
+          .last-name,
+          .email-div,
+          .password-div {
+            margin-bottom: 16px;
+
+            input {
+              padding: 16px 16px;
+
+              font-size: 0.9rem;
+
+              &::placeholder {
+                font-size: 0.9rem;
+              }
+            }
+          }
+
+          .submit-btn {
+            margin-bottom: 16px;
+          }
+
+          p {
+            text-align: center;
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  section {
+    .container {
+      padding: 0 25px 0 25px;
+
+      .heading {
+        padding-bottom: 60px;
+
+        h1 {
+          font-size: 2rem;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
