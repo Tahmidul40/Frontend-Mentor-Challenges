@@ -1,0 +1,80 @@
+.landing {
+  max-width: 640px;
+  margin: auto;
+
+  .heading {
+    text-align: center;
+
+    .logo {
+      width: 86px;
+      height: 24px;
+      margin: auto;
+      padding-top: 86px;
+      padding-bottom: 80px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin: 0;
+      color: $Gray;
+
+      span {
+        color: $Very-Dark-Blue;
+        font-weight: 700;
+      }
+    }
+
+    p {
+      padding: 15px 0 30px 0;
+      font-weight: 300;
+      color: $Very-Dark-Blue;
+      margin: 0;
+    }
+  }
+
+  .form {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 90px;
+
+    .form-group {
+      width: 68%;
+
+      input {
+        padding: 22px 0 22px 30px;
+        border-radius: 40px;
+        box-shadow: none;
+      }
+
+      input#docs-demo {
+        background: none;
+      }
+
+      .invalid-feedback.has-error-email {
+        padding-left: 30px;
+        font-size: 0.855rem;
+        letter-spacing: 1px;
+        background-image: none;
+        font-style: italic;
+      }
+    }
+
+    button {
+      width: 30%;
+      height: 70px;
+      padding: 22px 0 22px 0px;
+      background-color: $blue;
+      border-radius: 40px;
+      border: none;
+      box-shadow: 0px 8px 15px 0px #a8bdf0;
+
+      &:hover {
+        background-color: $blue-ish;
+      }
+    }
+  }
+}
