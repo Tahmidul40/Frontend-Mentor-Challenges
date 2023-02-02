@@ -1,0 +1,156 @@
+section.hero {
+  background-color: $Main-BG-blue;
+  padding: 60px 0;
+
+  @include tablet {
+    padding: 150px 0;
+  }
+
+  .container {
+    width: 330px;
+    margin: auto;
+    padding: 24px;
+    background-color: $Very-dark-blue;
+    border-radius: 12px;
+    -webkit-box-shadow: 0px 0px 25px 0px #070e1a;
+    box-shadow: 0px 0px 25px 0px #070e1a;
+
+    @include tablet {
+      width: 350px;
+    }
+
+    .img {
+      position: relative;
+
+      img {
+        border-radius: 12px;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: 0.5s ease;
+        border-radius: 12px;
+        background-color: $Cyan;
+      }
+
+      &:hover .overlay {
+        opacity: 0.75;
+      }
+
+      .icon {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+    }
+
+    .heading {
+      color: $light;
+
+      h1 {
+        font-size: 22px;
+        padding: 30px 0 20px 0;
+        margin: 0;
+
+        &:hover {
+          color: $Cyan;
+        }
+      }
+    }
+
+    .para {
+      color: $Soft-blue;
+      line-height: 1.4;
+      padding-bottom: 20px;
+    }
+
+    .money-time {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+
+      .eth {
+        display: flex;
+        align-items: center;
+
+        span {
+          color: $Cyan;
+          margin-left: 3px;
+          font-size: 15px;
+        }
+      }
+
+      .days {
+        display: flex;
+        align-items: center;
+
+        span {
+          color: $Very-soft-blue;
+          margin-left: 5px;
+          font-size: 15px;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .line {
+      width: 100%;
+      height: 1px;
+      background-color: $Very-soft-blue;
+      margin: 0 0 15px;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 29px;
+        height: 29px;
+        border: 1px solid $light;
+        border-radius: 50%;
+        margin-right: 20px;
+      }
+
+      p {
+        color: $Soft-blue;
+      }
+
+      a {
+        color: $light;
+
+        &:hover {
+          color: $Cyan;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: $Main-BG-blue;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: -1px;
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    a {
+      color: hsl(228, 45%, 44%);
+    }
+  }
+}

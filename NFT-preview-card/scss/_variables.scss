@@ -1,0 +1,15 @@
+// colors ----------
+$Soft-blue: #8bacda;
+$Cyan: #00fff7;
+
+$Main-BG-blue: #0d192b; //(main BG)
+$Very-dark-blue: #14253d; //(card BG)
+$Very-soft-blue: #2f415b; //(line)
+$light: #ffffff;
+
+// media query
+@mixin tablet {
+  @media (min-width: 768.98px) {
+    @content;
+  }
+}
