@@ -1,0 +1,33 @@
+// colors ----------
+$Paleblue: hsl(225, 100%, 94%);
+$Brightblue: hsl(245, 75%, 52%);
+
+$Verypaleblue: hsl(225, 100%, 98%);
+$Desaturatedblue: hsl(224, 23%, 55%);
+$Darkblue: hsl(223, 47%, 23%);
+$hover: hsl(245, 83%, 68%);
+
+// media query
+@mixin desktop {
+  @media (max-width: 1110.98px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (max-width: 1024.98px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 768.98px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 540.98px) {
+    @content;
+  }
+}
