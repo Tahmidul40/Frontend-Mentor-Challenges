@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | [Blogr]</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="./dist/style.css" />
+  </head>
+
+  <body>
+    <!-- main section -->
+    <main class="main">
+      <!-- header -->
+      <header class="container-header">
+        <nav class="navbar" data-aos="zoom-in">
+          <img src="./images/logo.svg" class="navbar__logo" alt="logo" />
+
+          <div class="navbar__hamburger" id="hamburger"></div>
+
+          <div class="navbar__menu" id="navbarMenu">
+            <!-- navbar menu -->
+            <div class="navbar__list">
+              <!-- drop down one -->
+              <div class="dropdown">
+                <button class="dropbtn" id="dropDown">
+                  Product
+                  <img src="./images/icon-arrow-light.svg" alt="" />
+                </button>
+                <div class="dropdown-content" id="dropItem">
+                  <a href="#">Overview</a>
+                  <a href="#">Pricing</a>
+                  <a href="#">Marketplace</a>
+                  <a href="#">Features</a>
+                  <a href="#">Integrations</a>
+                </div>
+              </div>
+
+              <!-- drop down two -->
+              <div class="dropdown">
+                <button class="dropbtn" id="dropDown2">
+                  Company
+                  <img src="./images/icon-arrow-light.svg" alt="" />
+                </button>
+                <div class="dropdown-content" id="dropItem2">
+                  <a href="#">About</a>
+                  <a href="#">Team</a>
+                  <a href="#">Blog</a>
+                </div>
+              </div>
+
+              <!-- drop down three -->
+              <div class="dropdown">
+                <button class="dropbtn" id="dropDown3">
+                  Connect
+                  <img src="./images/icon-arrow-light.svg" alt="" />
+                </button>
+                <div class="dropdown-content" id="dropItem3">
+                  <a href="#">Contact</a>
+                  <a href="#">Newsletter</a>
+                  <a href="#">LinkedIn</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- navbar btn -->
+            <div class="navbar__btn">
+              <a href="#" class="navbar__btn cta"> Login</a>
+              <a href="#" class="navbar__btn cta"> Sign Up</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- hero section -->
+      <section class="hero">
+        <div class="container">
+          <div class="aos-hero" data-aos="fade-up">
+            <h1>A modern publishing platform</h1>
+            <p>Grow your audience and build your online brand</p>
+
+            <div class="hero__ctaWrap">
+              <a href="#" class="hero__cta hero__cta">Start for Free</a>
+              <a href="#" class="hero__cta hero__cta">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- overviewTop -->
+    <section class="overviewTop">
+      <div class="container">
+        <h2 data-aos="zoom-in">Designed for the future</h2>
+        <div class="topWrap">
+          <div class="overviewTop__img" data-aos="fade-left">
+            <!-- img for mobile -->
+            <img
+              src="./images/illustration-editor-mobile-cropped.svg"
+              class="d-mid-none"
+              alt=""
+            />
+            <!-- img for large device -->
+            <img
+              src="./images/illustration-editor-desktop.svg"
+              class="d-sm-none"
+              alt=""
+            />
+          </div>
+
+          <div class="overviewTop__text" data-aos="fade-up">
+            <div class="top">
+              <h2>Introducing an extensible editor</h2>
+              <p>
+                Blogr features an exceedingly intuitive interface which lets you
+                focus on one thing: creating content. The editor supports
+                management of multiple blogs and allows easy manipulation of
+                embeds such as images, videos, and Markdown. Extensibility with
+                plugins and themes provide easy ways to add functionality or
+                change the looks of a blog.
+              </p>
+            </div>
+
+            <div class="bottom">
+              <h2>Robust content management</h2>
+              <p>
+                Flexible content management enables users to easily move through
+                posts. Increase the usability of your blog by adding customized
+                categories, sections, format, or flow. With this functionality,
+                you’re in full control.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- overviewMiddle -->
+    <section class="overviewMiddle">
+      <div class="overviewMid">
+        <div class="container">
+          <div class="overviewMid__text" data-aos="fade-up">
+            <h2>State of the Art Infrastructure</h2>
+            <p>
+              With reliability and speed in mind, worldwide data centers provide
+              the backbone for ultra-fast connectivity. This ensures your site
+              will load instantly, no matter where your readers are, keeping
+              your site competitive.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="overviewEnd">
+      <div class="container">
+        <div class="overviewEnd__img" data-aos="fade-right">
+          <!-- mobile -->
+          <img
+            src="./images/illustration-laptop-mobile-cropped.svg"
+            alt=""
+            class="d-mid-none"
+          />
+          <!-- large screen -->
+          <img
+            src="./images/illustration-laptop-desktop.svg"
+            alt=" "
+            class="d-sm-none"
+          />
+        </div>
+        <div class="overviewTop__text" data-aos="fade-up">
+          <div class="top">
+            <h2>Free, open, simple</h2>
+            <p>
+              Blogr is a free and open source application backed by a large
+              community of helpful developers. It supports features such as code
+              syntax highlighting, RSS feeds, social media integration,
+              third-party commenting tools, and works seamlessly with Google
+              Analytics. The architecture is clean and is relatively easy to
+              learn.
+            </p>
+          </div>
+
+          <div class="bottom">
+            <h2>Powerful tooling</h2>
+            <p>
+              Batteries included. We built a simple and straightforward CLI tool
+              that makes customization and deployment a breeze, but capable of
+              producing even the most complicated sites.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container" data-aos="zoom-in">
+        <div class="footer__wrap">
+          <img src="./images/logo.svg" class="footer__logo" alt="" />
+
+          <ul class="footer__list">
+            <h3>Product</h3>
+            <li class="footer__list-item"><a href="#">Overview</a></li>
+            <li class="footer__list-item"><a href="#">Pricing</a></li>
+            <li class="footer__list-item"><a href="#">Marketplace</a></li>
+            <li class="footer__list-item"><a href="#">Features</a></li>
+            <li class="footer__list-item"><a href="#">Integrations</a></li>
+          </ul>
+
+          <ul class="footer__list">
+            <h3>Company</h3>
+            <li class="footer__list-item"><a href="#">About</a></li>
+            <li class="footer__list-item"><a href="#">Team</a></li>
+            <li class="footer__list-item"><a href="#">Blog</a></li>
+            <li class="footer__list-item"><a href="#">Careers</a></li>
+          </ul>
+
+          <ul class="footer__list">
+            <h3>Connect</h3>
+            <li class="footer__list-item"><a href="#">Contact</a></li>
+            <li class="footer__list-item"><a href="#">Newsletter</a></li>
+            <li class="footer__list-item"><a href="#">Blog</a></li>
+            <li class="footer__list-item"><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="http://github.com/Tahmidul40">Tahmidul</a>.
+      </div>
+    </footer>
+
+    <!-- aso js file -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- js file -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
