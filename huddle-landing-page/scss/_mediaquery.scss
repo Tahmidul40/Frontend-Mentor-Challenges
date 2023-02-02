@@ -1,0 +1,171 @@
+// X-Large devices (large desktops, more than 1400px)
+@media (min-width: 1399.98px) {
+  .attribution {
+    display: none;
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+  // home section
+  .home {
+    .container {
+      .text {
+        max-width: 50% !important;
+        padding-right: 20px !important;
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  // home section
+  .home {
+    .container {
+      .text {
+        max-width: 50% !important;
+        padding-right: 20px !important;
+      }
+    }
+  }
+
+  // box section
+  .box-section {
+    .box-container {
+      .box {
+        padding: 0 30px 0 30px;
+
+        .text {
+          padding-right: 30px;
+        }
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  // home section
+  .home .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .text {
+      max-width: 100% !important;
+      margin-bottom: 60px;
+    }
+
+    .img {
+      max-width: 90%;
+    }
+  }
+
+  // box
+  .box-section {
+    .box-container {
+      .box {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 30px;
+
+        .text {
+          width: 100%;
+          order: 2;
+          padding-right: 0;
+
+          p {
+            padding-right: 0px;
+            max-width: 100%;
+          }
+        }
+
+        .img {
+          width: 70%;
+          order: 1;
+          margin-bottom: 50px;
+        }
+
+        &:nth-child(2) {
+          .text {
+            padding-left: 0px;
+          }
+        }
+      }
+    }
+  }
+
+  // footer section
+  footer {
+    .footer-container {
+      padding: 10em 0 5em 0;
+
+      .logo img {
+        max-width: 200px;
+      }
+
+      .footer-list {
+        flex-direction: column;
+
+        .address {
+          margin-bottom: 40px;
+        }
+
+        .social-link {
+          margin-top: 30px;
+
+          li a img {
+            margin-left: 0;
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+    // copy right
+    .copy-right {
+      padding: 0;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  // for all
+  p {
+    font-size: 0.9em;
+  }
+  // header section
+  header .container {
+    img {
+      width: 100px !important;
+    }
+
+    a {
+      font-size: 12px !important;
+      padding: 10px 40px !important;
+    }
+  }
+
+  // home section
+  .home {
+    h1 {
+      font-size: 2rem !important;
+    }
+  }
+
+  // cta section
+  .cta-section .cta-container {
+    h2 {
+      font-size: 1.4em;
+    }
+
+    a {
+      font-size: 16px;
+      padding: 20px 40px;
+    }
+  }
+}
