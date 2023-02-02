@@ -1,0 +1,30 @@
+.sub-count {
+  .mock {
+    max-width: 1020px !important;
+    margin: auto;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 100px 0;
+
+    img {
+      width: 50px;
+    }
+
+    h2 {
+      font-size: 5rem;
+      color: $v-d-cyan;
+    }
+
+    p {
+      color: rgb(161, 161, 161);
+      font-size: 1.2rem;
+    }
+  }
+}

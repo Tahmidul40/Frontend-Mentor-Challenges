@@ -1,0 +1,151 @@
+// grow section
+.grow {
+  position: relative;
+  background: $v-p-blue;
+  margin: 125px 0;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/bg-section-top-desktop-1.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -150px;
+    left: 0;
+    z-index: -999;
+  }
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/bg-section-top-desktop-2.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -150px;
+    left: 0;
+    transform: rotate(180deg);
+    z-index: -999;
+  }
+
+  .wrapper {
+    min-height: 500px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .right {
+      width: 40%;
+
+      img {
+        width: 100%;
+      }
+    }
+    .left {
+      width: 41%;
+      h2 {
+        font-size: 2.2rem;
+        margin-bottom: 20px;
+        color: $v-d-cyan;
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+// flowing section
+.flowing {
+  padding: 100px 0;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .right {
+      width: 41%;
+
+      h2 {
+        font-size: 2.2rem;
+        margin-bottom: 20px;
+        color: $v-d-cyan;
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
+
+    .left {
+      width: 40%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// users section
+.users {
+  position: relative;
+  background: $v-p-blue;
+  margin: 125px 0;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/bg-section-top-desktop-1.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -150px;
+    left: 0;
+  }
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/bg-section-top-desktop-2.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -150px;
+    left: 0;
+    transform: rotate(180deg);
+  }
+
+  .wrapper {
+    min-height: 500px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .right {
+      width: 40%;
+
+      img {
+        width: 100%;
+      }
+    }
+    .left {
+      width: 41%;
+
+      h2 {
+        font-size: 2.2rem;
+        margin-bottom: 20px;
+        color: $v-d-cyan;
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+}

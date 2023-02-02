@@ -1,0 +1,292 @@
+@media (max-width: 1299.98px) {
+  .container {
+    width: 95%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 1124.98px) {
+  // hero section
+  .hero .main {
+    h1 {
+      width: 80%;
+      margin: auto;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  // sub count section
+  .sub-count {
+    .mock {
+      width: 100%;
+    }
+
+    .wrapper {
+      flex-direction: column;
+      align-items: center;
+
+      .left {
+        margin-bottom: 100px;
+      }
+    }
+  }
+
+  // middle section - grow
+  .grow {
+    .wrapper {
+      flex-direction: column-reverse;
+      text-align: center;
+      padding: 50px 0;
+
+      .right {
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  // middle section - flowing
+  .flowing {
+    .wrapper {
+      flex-direction: column;
+      text-align: center;
+      .left {
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  // middle section - users
+  .users {
+    .wrapper {
+      flex-direction: column-reverse;
+      text-align: center;
+      padding: 50px 0;
+
+      .right {
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  // footer
+  footer {
+    .wrapper {
+      flex-direction: column-reverse;
+
+      .right {
+        width: 100%;
+        margin-bottom: 100px;
+      }
+    }
+
+    .left {
+      width: 100% !important;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      div {
+        margin-right: 30px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768.98px) {
+  // middle section - grow
+  .grow {
+    .wrapper {
+      width: 355px;
+      margin: auto;
+
+      .right {
+        width: 100%;
+      }
+
+      .left {
+        width: 100%;
+      }
+    }
+  }
+
+  // middle section - flowing
+  .flowing {
+    .wrapper {
+      width: 360px;
+      margin: auto;
+      padding: 100px 0;
+
+      .right {
+        width: 100%;
+      }
+
+      .left {
+        width: 100%;
+      }
+    }
+  }
+
+  // middle section - users
+  .users {
+    .wrapper {
+      width: 355px;
+      margin: auto;
+
+      .right {
+        width: 100%;
+      }
+
+      .left {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 540.98px) {
+  // hero section
+  .hero header a {
+    display: none;
+  }
+
+  .hero .main {
+    padding-top: 50px;
+
+    h1 {
+      width: 100%;
+    }
+
+    a.btn {
+      padding: 20px 40px;
+    }
+  }
+
+  // middle section - grow
+  .grow {
+    .wrapper {
+      width: 100%;
+    }
+  }
+
+  // middle section - flowing
+  .flowing {
+    .wrapper {
+      width: 100%;
+      padding: 100px 0 50px;
+    }
+  }
+
+  // middle section - users
+  .users {
+    .wrapper {
+      width: 100%;
+    }
+  }
+
+  // community
+  .community {
+    a.btn {
+      padding: 20px 40px;
+    }
+  }
+
+  // footer
+  footer {
+    .wrapper {
+      .right {
+        form {
+          display: flex;
+          flex-direction: column;
+
+          input {
+            width: 100%;
+          }
+
+          a {
+            text-align: center;
+            width: 190px;
+            align-self: flex-end;
+            margin-left: 0px;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+
+    .left {
+      flex-direction: column;
+
+      div {
+        margin-right: 0;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 425.98px) {
+  // middle section - grow
+  .grow {
+    &::before {
+      background-image: url(../images/bg-section-top-mobile-2.svg);
+      background-size: contain;
+      top: -15%;
+      -webkit-transform: rotate(180deg);
+      transform: rotate(0deg);
+    }
+
+    &::after {
+      background-image: url(../images/bg-section-top-mobile-2.svg);
+      background-size: contain;
+      -webkit-transform: rotate(0deg);
+      transform: rotate(180deg);
+      top: 15%;
+      left: 0;
+    }
+  }
+
+  // middle section - users
+  .users {
+    &::before {
+      background-image: url(../images/bg-section-bottom-mobile-1.svg);
+      background-size: contain;
+      top: -100%;
+      transform: rotate(180deg);
+    }
+
+    &::after {
+      background-image: url(../images/bg-section-bottom-mobile-2.svg);
+      background-size: contain;
+      transform: rotate(0deg);
+      top: 100%;
+      left: 0;
+    }
+  }
+
+  // footer
+  footer {
+    &::before {
+      background-image: url(../images/bg-footer-top-mobile.svg);
+      background-size: contain;
+      top: -40px;
+    }
+  }
+}
