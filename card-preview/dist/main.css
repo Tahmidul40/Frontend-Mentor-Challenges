@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  background: #f2f2f2;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body h2 {
+  font-family: "Big Shoulders Display", cursive;
+}
+
+.hero {
+  min-height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .container {
+  max-width: 920px;
+  margin: auto;
+}
+
+.hero .container .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.hero .container .wrapper .box {
+  padding: 50px 50px 70px;
+}
+
+.hero .container .wrapper .box h2 {
+  font-size: 2.5rem;
+  margin: 40px 0;
+  text-transform: uppercase;
+  color: #f2f2f2;
+}
+
+.hero .container .wrapper .box p {
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 100px;
+  line-height: 1.6;
+}
+
+.hero .container .wrapper .box a {
+  background: #fff;
+  padding: 14px 32px;
+  border-radius: 30px;
+  border: 2px solid #f2f2f2;
+}
+
+.hero .container .wrapper .box a:hover {
+  border: 2px solid #f2f2f2;
+  background: transparent;
+  color: #f2f2f2;
+}
+
+.hero .container .wrapper .one {
+  background: #e38826;
+}
+
+.hero .container .wrapper .one a {
+  color: #e38826;
+}
+
+.hero .container .wrapper .two {
+  background: #006970;
+}
+
+.hero .container .wrapper .two a {
+  color: #006970;
+}
+
+.hero .container .wrapper .three {
+  background: #004241;
+}
+
+.hero .container .wrapper .three a {
+  color: #004241;
+}
+
+.hero .attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 10px;
+}
+
+.hero .attribution a {
+  color: #3e52a3;
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    padding: 80px 25px;
+  }
+  .container .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .wrapper .box {
+    max-width: 327px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
