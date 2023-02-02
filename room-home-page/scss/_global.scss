@@ -1,0 +1,35 @@
+// global ----------
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  overflow-x: hidden !important;
+  font-size: 12px;
+}
+
+// body overflow hidden for nav
+body.active {
+  overflow: hidden !important;
+}
+
+img {
+  width: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+// container
+.container {
+  max-width: 1440px;
+  margin: auto;
+}

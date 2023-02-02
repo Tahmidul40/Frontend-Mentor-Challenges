@@ -1,0 +1,30 @@
+// colors ----------
+$Dark-Gray: hsl(0, 0%, 63%);
+$Black: hsl(0, 0%, 0%);
+$White: hsl(0, 0%, 100%);
+$Very-Dark-Gray: hsl(0, 0%, 27%);
+
+// media query
+@mixin desktop {
+  @media (max-width: 1110.98px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (max-width: 1024.98px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 768.98px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 540.98px) {
+    @content;
+  }
+}
