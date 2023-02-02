@@ -1,0 +1,94 @@
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+  .box {
+    display: flex;
+    flex-direction: column;
+    .box-2 {
+      display: flex;
+      .box-two {
+        margin-right: 32px;
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, less than 892px)
+@media (max-width: 891.98px) {
+  .box {
+    .box-2 {
+      flex-direction: column;
+
+      .box-two,
+      .box-three {
+        margin-right: 0 !important;
+      }
+    }
+  }
+
+  .box {
+    .box-one,
+    .box-two,
+    .box-three,
+    .box-four {
+      margin-bottom: 26px !important;
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  section {
+    .header {
+      padding-top: 70px;
+      padding-bottom: 40px;
+
+      h2 {
+        font-size: 1.8rem;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      p {
+        font-size: 14px;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  section {
+    .header {
+      padding-top: 40px;
+      padding-bottom: 30px;
+
+      h2 {
+        font-size: 1.4rem;
+      }
+
+      h1 {
+        font-size: 1.4rem;
+      }
+
+      p {
+        font-size: 13px;
+        margin-top: 15px;
+        //padding: 0 10px;
+
+        .break {
+          display: none;
+        }
+      }
+    }
+
+    .box {
+      .box-2 {
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+    }
+  }
+}

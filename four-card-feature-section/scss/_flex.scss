@@ -1,0 +1,50 @@
+.box {
+  display: flex;
+  max-width: 1215px;
+  margin: auto;
+
+  .box-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .box-one {
+      justify-self: center;
+    }
+  }
+
+  .box-2 {
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 795px;
+    margin: auto;
+
+    .box-two {
+      margin-bottom: 30px;
+
+      .line {
+        background-color: $Red;
+      }
+    }
+
+    .box-three {
+      .line {
+        background: $Orange;
+      }
+    }
+  }
+
+  .box-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .box-four {
+      justify-self: center;
+
+      .line {
+        background-color: $Blue;
+      }
+    }
+  }
+}
