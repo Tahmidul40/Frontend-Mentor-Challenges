@@ -1,0 +1,149 @@
+.hero {
+  max-width: 1440px;
+  margin: auto;
+  padding: 100px 0 120px;
+  background-color: $DarkViolet;
+  color: $VeryLightGray;
+  position: relative;
+
+  @include mobile {
+    padding: 0;
+  }
+
+  &::before {
+    content: "";
+    width: 435px;
+    height: 600px;
+    background-image: url(../images/bg-pattern-intro-right-desktop.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(0%, -12%);
+    z-index: 1;
+
+    // before & after content - none
+    @include tablet {
+      content: none;
+    }
+  }
+
+  &::after {
+    content: "";
+    // width: 435px;
+    // height: 600px;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/bg-pattern-intro-left-desktop.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(0%, 70%);
+    z-index: 1;
+
+    // before & after content - none
+    @include tablet {
+      content: none;
+    }
+  }
+
+  .container {
+    display: flex;
+
+    @include laptop {
+      flex-direction: column-reverse;
+      align-items: center;
+      text-align: center;
+    }
+
+    @include mobile {
+      padding-bottom: 100px;
+      position: relative;
+      overflow: hidden;
+
+      &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-image: url(../images/bg-pattern-intro-right-mobile.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: translate(71%, 80%);
+        z-index: 1;
+      }
+
+      &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-image: url(../images/bg-pattern-intro-left-mobile.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: translate(0%, 43%);
+        z-index: 1;
+      }
+    }
+  }
+
+  &__title {
+    width: 575px;
+    z-index: 99;
+
+    @include mobile {
+      max-width: 375px;
+    }
+
+    .line {
+      margin-top: 100px;
+    }
+
+    h1 {
+      font-size: 65px;
+      margin: 70px 0 20px;
+
+      @include mobile {
+        font-size: 40px;
+      }
+    }
+
+    p {
+      margin-right: 30px;
+      margin-bottom: 30px;
+
+      @include tablet {
+        margin-right: 0;
+        padding: 0 24px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__img {
+    width: 540px;
+    position: relative;
+
+    @include tablet {
+      z-index: 99;
+    }
+
+    img {
+      position: absolute;
+      width: 540px;
+      top: 0;
+      right: 0;
+
+      @include laptop {
+        position: initial;
+      }
+
+      @include mobile {
+        width: 375px;
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.cta {
+  padding: 100px 0 150px;
+
+  @include desktop {
+    padding: 100px 24px 150px;
+  }
+
+  .container {
+    padding: 80px;
+    background-color: $DarkViolet;
+    color: $VeryLightGray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+    @include tablet {
+      flex-direction: column;
+      text-align: center;
+      padding: 40px 20px;
+
+      h3 {
+        margin-bottom: 20px;
+      }
+
+      br {
+        display: none;
+      }
+    }
+
+    &::after {
+      content: "";
+      width: 435px;
+      height: 600px;
+      background-image: url(../images/bg-pattern-how-we-work-desktop.svg);
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 1;
+
+      @include mobile {
+        width: 100%;
+        height: 100%;
+        background-image: url(../images/bg-pattern-how-we-work-mobile.svg);
+        left: 152px;
+      }
+    }
+  }
+
+  &__btn {
+    position: relative;
+    z-index: 2;
+  }
+}

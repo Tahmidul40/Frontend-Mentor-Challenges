@@ -1,0 +1,50 @@
+.about {
+  margin-top: 300px;
+
+  @include laptop {
+    margin-top: 100px;
+  }
+
+  &__title {
+    .line {
+      background-color: $DarkViolet;
+      margin: auto;
+    }
+
+    h2 {
+      margin: 100px 0;
+
+      @include laptop {
+        text-align: center;
+      }
+    }
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+
+    @include laptop {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  &__card {
+    width: 345px;
+    height: 300px;
+
+    img {
+      width: 80px;
+    }
+
+    h4 {
+      margin: 30px 0;
+    }
+
+    p {
+      color: $DarkGrayishViolet;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+// colors ----------//
+$DarkViolet: #2d2640;
+$GrayishBlue: hsl(216, 30%, 68%);
+
+$VeryDarkViolet: #2b272f;
+$DarkGrayishViolet: hsl(273, 4%, 51%);
+$VeryLightGray: #fafafa;
+
+// font family
+$display: "DM Serif Display", serif;
+$karla: "Karla", sans-serif;
+
+// media query
+@mixin desktop {
+  @media (max-width: 1120.98px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (max-width: 1024.98px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 768.98px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 580.98px) {
+    @content;
+  }
+}

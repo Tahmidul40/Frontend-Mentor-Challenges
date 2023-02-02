@@ -1,0 +1,113 @@
+.footer {
+  padding: 60px 0;
+  background-color: $VeryLightGray;
+  position: relative;
+
+  @include mobile {
+    padding-top: 100px;
+  }
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/bg-pattern-footer-desktop.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    @include mobile {
+      background-image: url(../images/bg-pattern-footer-mobile.svg);
+    }
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+
+    @include tablet {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__logo {
+    width: 110px;
+
+    @include tablet {
+      margin-top: 30px;
+    }
+  }
+
+  &__menu {
+    li {
+      display: inline;
+
+      a i {
+        font-size: 25px;
+        color: $DarkViolet;
+        margin-left: 16px;
+
+        &:hover {
+          color: $DarkGrayishViolet;
+        }
+      }
+    }
+  }
+
+  &__line {
+    width: 100%;
+    height: 1px;
+    background-color: $DarkGrayishViolet;
+    margin: 30px 0 45px;
+
+    @include laptop {
+      margin-bottom: 100px;
+    }
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+
+    @include laptop {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+  }
+
+  &__card {
+    width: 277px;
+
+    @include laptop {
+      margin-bottom: 50px;
+    }
+
+    h5 {
+      margin-bottom: 30px;
+      color: $DarkGrayishViolet;
+      text-transform: uppercase;
+    }
+
+    ul li {
+      margin-bottom: 16px;
+    }
+
+    a {
+      color: $VeryDarkViolet;
+      text-transform: uppercase;
+      font-weight: 700;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

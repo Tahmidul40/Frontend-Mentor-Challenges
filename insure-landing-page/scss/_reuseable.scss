@@ -1,0 +1,76 @@
+// container
+.container {
+  max-width: 1110px;
+  margin: auto;
+
+  @include desktop {
+    padding: 0 24px;
+  }
+}
+
+// h1, h2, h3, h4, h5, h6
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $display;
+}
+
+h2 {
+  font-size: 60px;
+  color: $DarkViolet;
+
+  @include tablet {
+    font-size: 40px;
+  }
+}
+
+h3 {
+  font-size: 40px;
+
+  @include tablet {
+    font-size: 30px;
+  }
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-family: $karla;
+  font-size: 16px;
+}
+
+// p
+p {
+  line-height: 1.5;
+}
+
+// line
+.line {
+  max-width: 150px;
+  height: 1px;
+  background-color: $VeryLightGray;
+
+  @include laptop {
+    margin: auto;
+  }
+}
+
+// btn
+.btn {
+  padding: 12px 25px;
+  text-transform: uppercase;
+  border: 1px solid $VeryLightGray;
+  background-color: transparent;
+  color: $VeryLightGray;
+  font-weight: 600;
+
+  &:hover {
+    background-color: $VeryLightGray;
+    color: $DarkViolet;
+  }
+}
