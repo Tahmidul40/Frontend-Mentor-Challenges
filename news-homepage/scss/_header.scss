@@ -1,0 +1,102 @@
+// header -- nav
+#header {
+  padding-top: 35px;
+  position: relative;
+
+  @include mobile {
+    padding-top: 0;
+  }
+
+  nav {
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    #logo {
+      width: 40px !important;
+      height: auto;
+    }
+
+    .nav-links {
+      li {
+        display: inline;
+        margin-left: 35px;
+
+        a {
+          color: $Dark-grayish-blue;
+          text-decoration: none;
+
+          &:hover {
+            color: $Soft-red;
+          }
+        }
+      }
+    }
+
+    .nav-active {
+      display: flex;
+    }
+
+    .burger {
+      display: none;
+      cursor: pointer;
+
+      div {
+        width: 25px;
+        height: 3px;
+        background-color: $Very-dark-blue;
+        margin: 5px;
+      }
+    }
+
+    .toggle {
+      .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+      }
+
+      .line2 {
+        opacity: 0;
+      }
+
+      .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+      }
+    }
+
+    @include mobile {
+      .nav-links {
+        display: none;
+      }
+
+      .nav-active {
+        display: block;
+        background-color: #fff;
+        width: 70%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        padding-top: 150px;
+
+        li {
+          margin-bottom: 30px;
+        }
+
+        a {
+          color: #000;
+          font-size: 18px;
+        }
+      }
+
+      .burger {
+        display: block;
+        position: absolute;
+        right: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+// global ----------
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $inter;
+  font-size: 15px;
+  padding: 0 1rem;
+}
+
+.overflow {
+  height: 100%;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1110px;
+  margin: auto;
+
+  @include mobile {
+    max-width: 560px;
+  }
+}
+
+.para {
+  color: $Dark-grayish-blue;
+  line-height: 1.275;
+}
