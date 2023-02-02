@@ -1,0 +1,156 @@
+/* Variables */
+$Dark-cyan: hsl(185, 75%, 39%);
+$Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+$Dark-grayish-blue: hsl(227, 10%, 46%);
+$Dark-gray: hsl(0, 0%, 59%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: $Dark-cyan;
+  width: 100%;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container-svg {
+  width: 100vw;
+  max-width: 100%;
+  position: relative;
+
+  .svg {
+    position: absolute;
+    overflow: hidden;
+
+    .svg_top {
+      transform: translate(-55%, -48%);
+    }
+
+    .svg_bottom {
+      transform: translate(40%, -80%);
+    }
+  }
+}
+
+section {
+  width: 100vw;
+  max-width: 100%;
+  padding-top: 95px;
+  position: relative;
+
+  .box {
+    width: 350px;
+    height: 375px;
+    margin: auto;
+    border-radius: 12.5px;
+    background-color: #fff;
+    overflow: hidden;
+
+    .wrap {
+      width: 100%;
+      height: 285px;
+      position: relative;
+
+      .box-top {
+        width: 100%;
+        height: 140px;
+        background: url(../images/bg-pattern-card.svg);
+      }
+
+      .victor {
+        width: 95px;
+        height: 95px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(130%, 97%);
+
+        img {
+          border: 5px solid #fff;
+          border-radius: 50%;
+        }
+      }
+
+      .box-bottom {
+        width: 100%;
+        height: 145px;
+        text-align: center;
+
+        h2 {
+          font-size: 18px;
+          font-weight: bold;
+          margin-top: 75px;
+          margin-bottom: 15px;
+          span {
+            color: $Dark-gray;
+            font-weight: 400;
+          }
+        }
+
+        p {
+          color: $Dark-gray;
+        }
+      }
+
+      .box-bottom::after {
+        display: block;
+        content: "";
+        border-bottom: 1px solid #e7e7e7;
+        padding: 20px 0 0 0;
+        width: 375px;
+      }
+    }
+
+    .box-last {
+      width: 100%;
+      text-align: center;
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 26px;
+
+      h3 {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      p {
+        color: $Dark-gray;
+        letter-spacing: 1px;
+        font-size: 16px;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+
+.attribution {
+  margin-top: 130px;
+
+  a:nth-child(2) {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff !important;
+  }
+}
