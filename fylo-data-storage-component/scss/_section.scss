@@ -1,0 +1,157 @@
+section.container {
+  max-width: 920px;
+  min-height: 200px;
+  padding: 288px 0 309px 0;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  .logo-features {
+    width: 350px;
+    height: 200px;
+    padding: 40px;
+    background: $Dark-Blue;
+    border-radius: 12px;
+    border-top-right-radius: 120px;
+    .logo {
+      width: 135px;
+      height: 40px;
+      margin-bottom: 32px;
+    }
+
+    .features {
+      display: flex;
+      .document,
+      .folder,
+      .upload {
+        width: 50px;
+        height: 50px;
+        margin-right: 16px;
+        background-color: $Very-Dark-Blue;
+        padding: 13px 15px;
+        border-radius: 8px;
+
+        img {
+          width: 20px;
+          height: 24px;
+        }
+      }
+
+      .folder {
+        padding: 16px 13px;
+        img {
+          width: 24px;
+          height: 20px;
+        }
+      }
+
+      .upload {
+        padding: 16px 13px;
+        img {
+          width: 26px;
+          height: 20px;
+        }
+      }
+    }
+  }
+
+  .storage {
+    width: 540px;
+    height: 154px;
+    background: $Dark-Blue;
+    border-radius: 12px;
+    padding: 40px;
+    position: relative;
+
+    .para {
+      color: $Pale-Blue;
+      letter-spacing: 0.4px;
+      margin-bottom: 20px;
+
+      span {
+        color: #fff;
+        font-weight: 400;
+      }
+    }
+    .left-storage {
+      .free-storage {
+        width: 180px;
+        height: 73px;
+        background: #fff;
+        border-radius: 12px;
+        border-bottom-right-radius: 0px;
+        padding-top: 10px;
+        position: absolute;
+        top: -42px;
+        right: 40px;
+
+        h1 {
+          font-size: 2.4rem;
+          font-weight: 700;
+          color: #000;
+          text-align: center;
+          margin-bottom: 8px;
+
+          span {
+            text-transform: uppercase;
+            color: $Grayish-Blue;
+            font-size: small;
+            letter-spacing: 0.6px;
+          }
+        }
+      }
+      .triangle-up {
+        width: 180px;
+        height: 22px;
+        border-left: none;
+        border-right: 22px solid white;
+        border-bottom: 22px solid transparent;
+        position: absolute;
+        top: 31px;
+        right: 40px;
+      }
+    }
+
+    .progress-bar {
+      max-width: 100%;
+      height: 20px;
+      background-color: $Very-Dark-Blue;
+      border-radius: 12px;
+      padding: 4px;
+      overflow: hidden;
+      position: relative;
+
+      .progress-line {
+        width: 75%;
+        height: 13px;
+        border-radius: 12px;
+        background-image: linear-gradient(
+          to right,
+          hsl(6, 100%, 80%),
+          hsl(335, 100%, 65%)
+        );
+      }
+      .circle {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #fff;
+        position: absolute;
+        top: 23.5%;
+        right: 25.8%;
+      }
+    }
+
+    .progress-bar-status {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+
+      span {
+        color: $Pale-Blue;
+        font-weight: 400;
+      }
+    }
+  }
+}

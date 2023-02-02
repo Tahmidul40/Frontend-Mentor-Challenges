@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+  min-height: 100vh;
+  font-family: "Raleway", sans-serif;
+  background: $Very-Dark-Blue;
+  background-image: url(../images/bg-desktop.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  font-size: 14px;
+
+  img {
+    width: 100%;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  li {
+    list-style-type: none;
+  }
+}

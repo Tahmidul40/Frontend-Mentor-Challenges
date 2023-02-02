@@ -1,0 +1,72 @@
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  body {
+    height: 100%;
+  }
+  section.container {
+    max-width: 720px;
+    min-height: 200px;
+    padding: 270px 0 340px 0;
+
+    .logo-features {
+      margin-right: 16px;
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  body {
+    background-image: url(../images/bg-mobile.png);
+    background-position: center;
+    background-size: cover;
+  }
+
+  section.container {
+    max-width: 325px;
+    min-height: 200px;
+    padding: 125px 0 165px 0;
+    flex-direction: column;
+
+    .logo-features {
+      width: 100%;
+      min-height: 200px;
+      margin-right: 0;
+      margin-bottom: 16px;
+    }
+
+    .storage {
+      width: 100%;
+      height: 154px;
+
+      .left-storage {
+        .free-storage {
+          width: 180px;
+          height: 60px;
+          background: #fff;
+          border-radius: 12px;
+          padding-top: 5px;
+          top: 132px;
+          right: 79px;
+
+          h1 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: #000;
+            text-align: center;
+            margin-bottom: 8px;
+
+            span {
+              text-transform: uppercase;
+              color: $Grayish-Blue;
+              font-size: small;
+            }
+          }
+        }
+        .triangle-up {
+          display: none;
+        }
+      }
+    }
+  }
+}
