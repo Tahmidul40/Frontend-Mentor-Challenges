@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="./dist/main.css" />
+    <title>Social Media Dashboard</title>
+  </head>
+
+  <body>
+    <!-- section -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <!-- top -->
+        <div class="top">
+          <!-- top wraper -->
+          <div class="top__wrap">
+            <!-- top title -->
+            <div class="top__title">
+              <h1>Social Media Dashboard</h1>
+              <p>Total Followers: 23,004</p>
+            </div>
+
+            <!-- top switch -->
+            <div class="top__switch">
+              <span>Dark Mode</span>
+              <label class="switch"
+                ><input id="toggle-it" type="checkbox" checked />
+                <div></div>
+              </label>
+            </div>
+          </div>
+
+          <!-- top grid -->
+          <div class="top__grid">
+            <!-- facebook card -->
+            <div class="card card-facebook">
+              <a href="#">
+                <img src="./images/icon-facebook.svg" alt="" />
+                @nathanf
+              </a>
+
+              <h2>1987</h2>
+              <span class="followers">Followers</span>
+              <span class="today">
+                <img src="./images/icon-up.svg" alt="" />
+                12 Today
+              </span>
+            </div>
+
+            <!-- twitter card -->
+            <div class="card card-twitter">
+              <a href="#">
+                <img src="./images/icon-twitter.svg" alt="" />
+                @nathanf
+              </a>
+
+              <h2>1044</h2>
+              <span class="followers">Followers</span>
+              <span class="today">
+                <img src="./images/icon-up.svg" alt="" />
+                99 Today
+              </span>
+            </div>
+
+            <!-- instagram card -->
+            <div class="card card-instagram">
+              <a href="#">
+                <img src="./images/icon-instagram.svg" alt="" />
+                @realnathanf
+              </a>
+
+              <h2>11k</h2>
+              <span class="followers">Followers</span>
+              <span class="today">
+                <img src="./images/icon-up.svg" alt="" />
+                1099 Today
+              </span>
+            </div>
+
+            <!-- youtube card -->
+            <div class="card card-youtube">
+              <a href="#">
+                <img src="./images/icon-youtube.svg" alt="" />
+                Nathan F.
+              </a>
+
+              <h2>8239</h2>
+              <span class="followers"> Subscribers</span>
+              <span class="today red">
+                <img src="./images/icon-down.svg" alt="" />
+                144 Today
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- end -->
+        <div class="end">
+          <!-- end title -->
+          <div class="end__title">
+            <h3>Overview - Today</h3>
+          </div>
+
+          <!-- end grid -->
+          <div class="end__grid">
+            <!-- facebook page end card -->
+            <div class="card sub-grid">
+              <h4>Page Views</h4>
+              <div class="icon">
+                <img src="./images/icon-facebook.svg" alt="" />
+              </div>
+              <span class="num">87</span>
+              <div class="percent">
+                <img src="./images/icon-up.svg" alt="" />
+                3%
+              </div>
+            </div>
+
+            <!-- facebook likes end card -->
+            <div class="card sub-grid">
+              <h4>Likes</h4>
+              <div class="icon">
+                <img src="./images/icon-facebook.svg" alt="" />
+              </div>
+              <span class="num">52</span>
+              <div class="percent red">
+                <img src="./images/icon-down.svg" alt="" />
+                2%
+              </div>
+            </div>
+
+            <!-- instagram likes end card -->
+            <div class="card sub-grid">
+              <h4>Likes</h4>
+              <div class="icon">
+                <img src="./images/icon-instagram.svg" alt="" />
+              </div>
+              <span class="num">5462</span>
+              <div class="percent red">
+                <img src="./images/icon-up.svg" alt="" />
+                2257%
+              </div>
+            </div>
+
+            <!-- instagram profile end card -->
+            <div class="card sub-grid">
+              <h4>Profile Views</h4>
+              <div class="icon">
+                <img src="./images/icon-instagram.svg" alt="" />
+              </div>
+              <span class="num"> 52k</span>
+              <div class="percent red">
+                <img src="./images/icon-up.svg" alt="" />
+                1375%
+              </div>
+            </div>
+
+            <!-- twitter retweets end card -->
+            <div class="card sub-grid">
+              <h4>Retweets</h4>
+              <div class="icon">
+                <img src="./images/icon-twitter.svg" alt="" />
+              </div>
+              <span class="num"> 117</span>
+              <div class="percent red">
+                <img src="./images/icon-up.svg" alt="" />
+                303%
+              </div>
+            </div>
+
+            <!-- twitter likes end card -->
+            <div class="card sub-grid">
+              <h4>Likes</h4>
+              <div class="icon">
+                <img src="./images/icon-twitter.svg" alt="" />
+              </div>
+              <span class="num"> 507</span>
+              <div class="percent red">
+                <img src="./images/icon-up.svg" alt="" />
+                553%
+              </div>
+            </div>
+
+            <!-- youtube likes end card -->
+            <div class="card sub-grid">
+              <h4>Likes</h4>
+              <div class="icon">
+                <img src="./images/icon-youtube.svg" alt="" />
+              </div>
+              <span class="num"> 107</span>
+              <div class="percent red">
+                <img src="./images/icon-down.svg" alt="" />
+                19%
+              </div>
+            </div>
+
+            <!-- youtube profile end card -->
+            <div class="card sub-grid">
+              <h4>total Views</h4>
+              <div class="icon">
+                <img src="./images/icon-youtube.svg" alt="" />
+              </div>
+              <span class="num"> 1407</span>
+              <div class="percent red">
+                <img src="./images/icon-down.svg" alt="" />
+                12%
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- js file -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,407 @@
+.container {
+  max-width: 1110px;
+  margin: auto;
+
+  @include desktop {
+    padding: 0 25px;
+  }
+}
+
+.top {
+  &::before {
+    content: "";
+    width: 100%;
+    height: 240px;
+    background-color: $top-bg-light;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -999;
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+
+    @include mobile {
+      flex-direction: column;
+      justify-content: flex-start !important;
+      align-items: initial !important;
+    }
+  }
+
+  &__title {
+    position: relative;
+
+    h1 {
+      font-size: 1.75rem;
+      margin: 0;
+      color: $heading-light;
+
+      @include mobile {
+        font-size: 1.4rem;
+      }
+    }
+
+    p {
+      margin-top: 10px;
+      color: $text-light;
+    }
+
+    @include mobile {
+      margin-bottom: 25px;
+
+      &::after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: $text-light;
+        position: absolute;
+        bottom: -30px;
+        left: 0;
+      }
+    }
+  }
+
+  &__switch {
+    display: flex;
+    align-items: center;
+
+    @include mobile {
+      margin-top: 30px;
+    }
+
+    span {
+      color: $text-light;
+      font-weight: 600;
+      margin-right: 10px;
+    }
+
+    .switch {
+      display: inline-block;
+      font-size: 20px; /* 1 */
+      // height: 1em;
+      // width: 2em;
+      height: 24px;
+      width: 48px;
+      background: $toggle-light;
+      border-radius: 1em;
+
+      &:hover {
+        background-image: $toggle-dark;
+      }
+
+      div {
+        height: 20px;
+        width: 20px;
+        border-radius: 1em;
+        background: $toggle-dot-light;
+        box-shadow: 0 0.1em 0.3em rgba(0, 0, 0, 0.3);
+        -webkit-transition: all 300ms;
+        -moz-transition: all 300ms;
+        transition: all 300ms;
+        position: relative;
+        top: 2px;
+        left: 4px;
+      }
+
+      input {
+        position: absolute;
+        opacity: 0;
+      }
+
+      input:checked + div {
+        -webkit-transform: translate3d(100%, 0, 0);
+        -moz-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+      }
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px;
+    margin-bottom: 40px;
+
+    @include laptop {
+      grid-template-columns: repeat(2, 1fr);
+      grid-row-gap: 25px;
+    }
+
+    @include mobile {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card {
+      background-color: $card-bg-light;
+      border-radius: 5px;
+      text-align: center;
+
+      &:hover {
+        background-color: $card-bg-light-hover;
+        cursor: pointer;
+      }
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        color: $text-light;
+
+        img {
+          width: 20px;
+          margin-right: 10px;
+        }
+      }
+
+      h2 {
+        font-size: 3.5rem;
+        padding: 18px 0 11px;
+        margin: 0;
+      }
+
+      span.followers {
+        display: block;
+        font-size: 0.7875rem;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: $text-light;
+        padding-bottom: 20px;
+      }
+
+      .today {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.7875rem;
+        color: $lime-green;
+        font-weight: 700;
+        padding-bottom: 25px;
+
+        img {
+          width: 0.4375rem;
+          margin-right: 4px;
+        }
+      }
+    }
+
+    .card-facebook {
+      border-top: 4px solid $facebook;
+    }
+
+    .card-twitter {
+      border-top: 4px solid $twitter;
+    }
+
+    .card-instagram {
+      //border-top: 4px solid;
+      border-width: 3px;
+      border-bottom: 0;
+      border-style: solid;
+      border-image: linear-gradient(
+          to right,
+          #fdc468,
+          #ffa263,
+          #ff806c,
+          #f9607f,
+          #df4996
+        )
+        1 0%;
+    }
+
+    .card-youtube {
+      border-top: 4px solid $youtube;
+
+      .today {
+        color: $down-red;
+      }
+    }
+  }
+}
+
+.end {
+  &__title {
+    h3 {
+      font-size: 1.575rem;
+      margin-bottom: 25px;
+      color: $text-light;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 25px;
+    margin-bottom: 45px;
+
+    @include laptop {
+      grid-template-columns: repeat(3, 1fr);
+      grid-row-gap: 16px;
+    }
+
+    @include big-tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mobile {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card {
+      background-color: $card-bg-light;
+      border-radius: 5px;
+
+      &:hover {
+        background-color: $card-bg-light-hover;
+        cursor: pointer;
+      }
+
+      h4 {
+        font-size: 0.875rem;
+        color: $text-light;
+      }
+
+      div.icon {
+        align-self: start;
+        justify-self: self-end;
+
+        img {
+          width: 20px;
+        }
+      }
+
+      .num {
+        font-size: 2.0125rem;
+        font-weight: 700;
+        color: $heading-light;
+        padding: 15px 0 0;
+        margin: 0;
+      }
+
+      .percent {
+        font-size: 0.7875rem;
+        color: $lime-green;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        align-self: end;
+        justify-self: self-end;
+
+        img {
+          width: 0.4375rem;
+          margin-right: 4px;
+        }
+      }
+    }
+
+    .sub-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      padding: 25px;
+    }
+
+    .sub-grid:nth-child(2),
+    .sub-grid:nth-child(7),
+    .sub-grid:nth-child(8) {
+      .percent {
+        color: $down-red;
+      }
+    }
+  }
+}
+
+// dark mode switch color
+body.active {
+  background-color: $bg-dark;
+
+  .top {
+    &::before {
+      background-color: $top-bg-dark;
+    }
+
+    &__title {
+      h1 {
+        color: $heading-dark;
+      }
+
+      p {
+        color: $text-dark;
+      }
+    }
+
+    &__switch {
+      span {
+        color: $text-dark;
+      }
+
+      .switch {
+        background: $toggle-dark;
+
+        &:hover {
+          background-image: $toggle-light;
+        }
+
+        div {
+          background: $toggle-dot-dark;
+        }
+      }
+    }
+
+    &__grid {
+      .card {
+        background-color: $card-bg-dark;
+
+        &:hover {
+          background-color: $card-bg-dark-hover;
+        }
+
+        a {
+          color: $text-dark;
+        }
+
+        h2 {
+          color: $heading-dark;
+        }
+
+        span.followers {
+          color: $text-dark;
+        }
+      }
+    }
+  }
+
+  .end {
+    &__title {
+      h3 {
+        color: $text-dark;
+      }
+    }
+
+    &__grid {
+      .card {
+        background-color: $card-bg-dark;
+
+        &:hover {
+          background-color: $card-bg-dark-hover;
+        }
+
+        h4 {
+          color: $text-dark;
+        }
+
+        .num {
+          color: $heading-dark;
+        }
+      }
+    }
+  }
+}
