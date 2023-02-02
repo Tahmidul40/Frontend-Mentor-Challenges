@@ -1,0 +1,222 @@
+// variables colors - Primary - text
+$Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+$Soft-red: hsl(14, 88%, 65%);
+
+// Gradient - Background gradient:
+$Soft-violet: hsl(273, 75%, 66%);
+$Soft-blue: hsl(240, 73%, 65%);
+
+// variables mixins
+@mixin tablet {
+  @media (max-width: 991px) {
+    @content;
+  }
+}
+
+// Neutral - text
+$Very-dark-grayish-blue: hsl(237, 12%, 33%);
+$Dark-grayish-blue: hsl(240, 6%, 50%);
+
+// Dividers
+$Light-grayish-blue: hsl(240, 5%, 91%);
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
+}
+
+@include tablet() {
+  img {
+    width: 100%;
+  }
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  padding: 0 25px;
+  background: linear-gradient($Soft-violet, $Soft-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include tablet() {
+    height: auto;
+    padding: 200px 0;
+  }
+
+  &__card {
+    width: 924px;
+    height: 510px;
+    background: #fff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    @include tablet() {
+      width: 328px;
+      min-height: 535px;
+      flex-direction: column;
+    }
+
+    &::after {
+      content: "";
+      width: 120px;
+      height: 170px;
+      background-image: url(../images/illustration-box-desktop.svg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 38%;
+      left: -9%;
+    }
+
+    @include tablet() {
+      &::after {
+        content: none;
+      }
+    }
+  }
+
+  &__left {
+    width: 45%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border-bottom-left-radius: 20px;
+
+    @include tablet() {
+      width: 100%;
+      height: 100%;
+      border-radius: 0;
+      position: initial;
+    }
+  }
+
+  &__img {
+    width: 120%;
+    height: 100%;
+    position: absolute;
+    top: 10%;
+    right: 2%;
+
+    @include tablet() {
+      width: 75%;
+      height: 100%;
+      position: absolute;
+      top: 0%;
+      right: 0%;
+      transform: translate(-18%, -21%);
+    }
+
+    &::before {
+      content: "";
+      width: 165%;
+      height: 144%;
+      background-image: url(../images/bg-pattern-desktop.svg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: -44%;
+      left: -70%;
+
+      @include tablet() {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-image: url(../images/bg-pattern-desktop.svg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        transform: translate(0px, -165px);
+      }
+    }
+
+    @include tablet() {
+      &::after {
+        content: "";
+        width: 20%;
+        height: 18%;
+        background-image: url(../images/illustration-box-desktop.svg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        transform: translate(11px, 70px);
+      }
+    }
+  }
+
+  &__right {
+    width: 55%;
+    padding: 70px 60px 70px 40px;
+
+    @include tablet() {
+      width: 100%;
+      padding: 25px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+
+      @include tablet() {
+        text-align: center;
+        font-size: 1.75rem;
+      }
+    }
+  }
+}
+
+// accordion
+.main__right {
+  .accordion {
+    .accordion-item {
+      .accordion-header {
+        .accordion-button {
+          padding: 16px 0;
+          outline: 0;
+          border: 0;
+          background: #fff;
+          box-shadow: none;
+
+          &:focus {
+            padding: 16px 0;
+            outline: none;
+            box-shadow: none;
+            font-weight: 700;
+            color: #000;
+          }
+
+          &:hover {
+            color: $Soft-red;
+            &::after {
+              background-image: url(../images/icon-arrow-down.svg);
+              background-size: 60%;
+              background-position: center;
+            }
+          }
+
+          &::after {
+            background-size: 60%;
+          }
+        }
+      }
+
+      .accordion-collapse {
+        .accordion-body {
+          padding: 0 0 1rem 0rem;
+        }
+      }
+    }
+  }
+}
