@@ -1,0 +1,171 @@
+section {
+  max-width: 1110px;
+  margin: auto;
+  padding: 165px 0;
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "one one two five"
+      "three four four five";
+    gap: 24px 30px;
+
+    .one {
+      grid-area: one;
+      height: 285px;
+    }
+
+    .one {
+      background: url(../images/bg-pattern-quotation.svg);
+      background-repeat: no-repeat;
+      background-position: top right 96px;
+    }
+
+    .two {
+      grid-area: two;
+      height: 285px;
+    }
+
+    .three {
+      grid-area: three;
+      height: 285px;
+    }
+
+    .four {
+      grid-area: four;
+      height: 285px;
+    }
+
+    .five {
+      grid-area: five;
+      // height: 285px * 2 + 30px;
+      height: 100%;
+    }
+
+    // all style in one for padding img-width...
+    .one,
+    .two,
+    .three,
+    .four,
+    .five {
+      width: 100%;
+      padding: 26px 32px;
+      border-radius: 10px;
+      box-shadow: 20px 34px 37px -28px rgba(148, 148, 148, 0.6);
+
+      .profile {
+        display: flex;
+
+        .pro-img {
+          width: 32px;
+          height: 32px;
+
+          img {
+            border-radius: 50%;
+          }
+        }
+
+        .pro-name {
+          margin-bottom: 16px;
+          margin-left: 10px;
+
+          h2 {
+            font-size: 14px;
+            font-weight: 400;
+          }
+        }
+      }
+
+      .mark {
+        margin-bottom: 16px;
+      }
+    }
+
+    // three five background
+    .three,
+    .five {
+      background-color: $White;
+    }
+
+    .three,
+    .five {
+      .profile {
+        .pro-name {
+          h2 {
+            color: $Very-dark-blackish-blue;
+          }
+          p {
+            //color: $Light-gray;
+            color: $Very-dark-blackish-blue;
+            opacity: 50%;
+          }
+        }
+      }
+      .mark {
+        margin-bottom: 30px;
+        h1 {
+          color: $Very-dark-grayish-blue;
+          width: 85%;
+        }
+      }
+      .para {
+        color: $Very-dark-blackish-blue;
+        opacity: 70%;
+        line-height: 1.5;
+      }
+    }
+
+    // one, two, four style for background
+    .one {
+      background-color: $Moderate-violet;
+    }
+
+    .two {
+      background-color: $Very-dark-grayish-blue;
+    }
+
+    .four {
+      background-color: $Very-dark-blackish-blue;
+    }
+
+    .one,
+    .two,
+    .four {
+      .profile {
+        .pro-name {
+          h2 {
+            color: $White;
+          }
+          p {
+            //color: $Light-gray;
+            color: $White;
+            opacity: 50%;
+          }
+        }
+      }
+      .mark {
+        h1 {
+          color: $Light-grayish-blue;
+        }
+      }
+      .para {
+        p {
+          //color: $Light-gray;
+          color: $White;
+          opacity: 70%;
+        }
+      }
+    }
+
+    .four {
+      .para {
+        line-height: 1.5;
+      }
+      .mark {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

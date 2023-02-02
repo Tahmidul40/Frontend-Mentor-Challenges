@@ -1,0 +1,190 @@
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+  section {
+    max-width: 850px;
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+        "one one two"
+        "three four four"
+        "five five five";
+      gap: 24px 30px;
+
+      .one {
+        grid-area: one;
+      }
+
+      .two {
+        grid-area: two;
+      }
+
+      .three {
+        grid-area: three;
+      }
+
+      .four {
+        grid-area: four;
+      }
+
+      .five {
+        grid-area: five;
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  section {
+    max-width: 615px;
+    padding: 130px 0;
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+        "one one"
+        "two three"
+        " four four"
+        "five five";
+      gap: 24px 30px;
+
+      .one {
+        grid-area: one;
+        height: auto;
+      }
+
+      .two {
+        grid-area: two;
+        height: auto;
+      }
+
+      .three {
+        grid-area: three;
+        height: auto;
+      }
+
+      .four {
+        grid-area: four;
+        height: auto;
+      }
+
+      .five {
+        grid-area: five;
+        height: auto;
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  section {
+    max-width: 415px;
+    padding: 100px 0;
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas:
+        "one"
+        "two "
+        "three"
+        "four"
+        "five";
+      gap: 24px 30px;
+
+      .one {
+        grid-area: one;
+        height: auto;
+      }
+
+      .one {
+        background-position: top right 25px;
+      }
+
+      .two {
+        grid-area: two;
+        height: auto;
+      }
+
+      .three {
+        grid-area: three;
+        height: auto;
+      }
+
+      .four {
+        grid-area: four;
+        height: auto;
+      }
+
+      .five {
+        grid-area: five;
+        height: auto;
+      }
+
+      .three {
+        .mark {
+          margin-bottom: 20px;
+        }
+      }
+
+      .five {
+        .mark {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  section {
+    max-width: 325px;
+    padding: 70px 0;
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas:
+        "one"
+        "two "
+        "three"
+        "four"
+        "five";
+      gap: 24px 30px;
+
+      .one {
+        grid-area: one;
+        height: auto;
+      }
+
+      .two {
+        grid-area: two;
+        height: auto;
+      }
+
+      .three {
+        grid-area: three;
+        height: auto;
+      }
+
+      .four {
+        grid-area: four;
+        height: auto;
+      }
+
+      .five {
+        grid-area: five;
+        height: auto;
+      }
+    }
+  }
+}

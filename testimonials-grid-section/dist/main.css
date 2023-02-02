@@ -1,0 +1,443 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 13px;
+  background: #ecf2f8;
+}
+
+body a {
+  color: #000;
+  text-decoration: none;
+}
+
+body li {
+  list-style: none;
+}
+
+body img {
+  width: 100%;
+}
+
+section {
+  max-width: 1110px;
+  margin: auto;
+  padding: 165px 0;
+}
+
+section .grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "one one two five" "three four four five";
+  gap: 24px 30px;
+}
+
+section .grid-container .one {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: one;
+  height: 285px;
+}
+
+section .grid-container .one {
+  background: url(../images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: top right 96px;
+}
+
+section .grid-container .two {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: two;
+  height: 285px;
+}
+
+section .grid-container .three {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: three;
+  height: 285px;
+}
+
+section .grid-container .four {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: four;
+  height: 285px;
+}
+
+section .grid-container .five {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: five;
+  height: 100%;
+}
+
+section .grid-container .one,
+section .grid-container .two,
+section .grid-container .three,
+section .grid-container .four,
+section .grid-container .five {
+  width: 100%;
+  padding: 26px 32px;
+  border-radius: 10px;
+  -webkit-box-shadow: 20px 34px 37px -28px rgba(148, 148, 148, 0.6);
+          box-shadow: 20px 34px 37px -28px rgba(148, 148, 148, 0.6);
+}
+
+section .grid-container .one .profile,
+section .grid-container .two .profile,
+section .grid-container .three .profile,
+section .grid-container .four .profile,
+section .grid-container .five .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section .grid-container .one .profile .pro-img,
+section .grid-container .two .profile .pro-img,
+section .grid-container .three .profile .pro-img,
+section .grid-container .four .profile .pro-img,
+section .grid-container .five .profile .pro-img {
+  width: 32px;
+  height: 32px;
+}
+
+section .grid-container .one .profile .pro-img img,
+section .grid-container .two .profile .pro-img img,
+section .grid-container .three .profile .pro-img img,
+section .grid-container .four .profile .pro-img img,
+section .grid-container .five .profile .pro-img img {
+  border-radius: 50%;
+}
+
+section .grid-container .one .profile .pro-name,
+section .grid-container .two .profile .pro-name,
+section .grid-container .three .profile .pro-name,
+section .grid-container .four .profile .pro-name,
+section .grid-container .five .profile .pro-name {
+  margin-bottom: 16px;
+  margin-left: 10px;
+}
+
+section .grid-container .one .profile .pro-name h2,
+section .grid-container .two .profile .pro-name h2,
+section .grid-container .three .profile .pro-name h2,
+section .grid-container .four .profile .pro-name h2,
+section .grid-container .five .profile .pro-name h2 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+section .grid-container .one .mark,
+section .grid-container .two .mark,
+section .grid-container .three .mark,
+section .grid-container .four .mark,
+section .grid-container .five .mark {
+  margin-bottom: 16px;
+}
+
+section .grid-container .three,
+section .grid-container .five {
+  background-color: white;
+}
+
+section .grid-container .three .profile .pro-name h2,
+section .grid-container .five .profile .pro-name h2 {
+  color: #19212e;
+}
+
+section .grid-container .three .profile .pro-name p,
+section .grid-container .five .profile .pro-name p {
+  color: #19212e;
+  opacity: 50%;
+}
+
+section .grid-container .three .mark,
+section .grid-container .five .mark {
+  margin-bottom: 30px;
+}
+
+section .grid-container .three .mark h1,
+section .grid-container .five .mark h1 {
+  color: #48556a;
+  width: 85%;
+}
+
+section .grid-container .three .para,
+section .grid-container .five .para {
+  color: #19212e;
+  opacity: 70%;
+  line-height: 1.5;
+}
+
+section .grid-container .one {
+  background-color: #7541c8;
+}
+
+section .grid-container .two {
+  background-color: #48556a;
+}
+
+section .grid-container .four {
+  background-color: #19212e;
+}
+
+section .grid-container .one .profile .pro-name h2,
+section .grid-container .two .profile .pro-name h2,
+section .grid-container .four .profile .pro-name h2 {
+  color: white;
+}
+
+section .grid-container .one .profile .pro-name p,
+section .grid-container .two .profile .pro-name p,
+section .grid-container .four .profile .pro-name p {
+  color: white;
+  opacity: 50%;
+}
+
+section .grid-container .one .mark h1,
+section .grid-container .two .mark h1,
+section .grid-container .four .mark h1 {
+  color: #ecf2f8;
+}
+
+section .grid-container .one .para p,
+section .grid-container .two .para p,
+section .grid-container .four .para p {
+  color: white;
+  opacity: 70%;
+}
+
+section .grid-container .four .para {
+  line-height: 1.5;
+}
+
+section .grid-container .four .mark {
+  margin-bottom: 30px;
+}
+
+footer {
+  margin-bottom: 20px;
+}
+
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+footer .attribution a {
+  color: #3e52a3;
+}
+
+@media (max-width: 1199.98px) {
+  section {
+    max-width: 850px;
+  }
+  section .grid-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "one one two" "three four four" "five five five";
+    gap: 24px 30px;
+  }
+  section .grid-container .one {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: one;
+  }
+  section .grid-container .two {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: two;
+  }
+  section .grid-container .three {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: three;
+  }
+  section .grid-container .four {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: four;
+  }
+  section .grid-container .five {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: five;
+  }
+}
+
+@media (max-width: 991.98px) {
+  section {
+    max-width: 615px;
+    padding: 130px 0;
+  }
+  section .grid-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "one one" "two three" " four four" "five five";
+    gap: 24px 30px;
+  }
+  section .grid-container .one {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: one;
+    height: auto;
+  }
+  section .grid-container .two {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: two;
+    height: auto;
+  }
+  section .grid-container .three {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: three;
+    height: auto;
+  }
+  section .grid-container .four {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: four;
+    height: auto;
+  }
+  section .grid-container .five {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: five;
+    height: auto;
+  }
+}
+
+@media (max-width: 767.98px) {
+  section {
+    max-width: 415px;
+    padding: 100px 0;
+  }
+  section .grid-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "one" "two " "three" "four" "five";
+    gap: 24px 30px;
+  }
+  section .grid-container .one {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: one;
+    height: auto;
+  }
+  section .grid-container .one {
+    background-position: top right 25px;
+  }
+  section .grid-container .two {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: two;
+    height: auto;
+  }
+  section .grid-container .three {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: three;
+    height: auto;
+  }
+  section .grid-container .four {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: four;
+    height: auto;
+  }
+  section .grid-container .five {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: five;
+    height: auto;
+  }
+  section .grid-container .three .mark {
+    margin-bottom: 20px;
+  }
+  section .grid-container .five .mark {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  section {
+    max-width: 325px;
+    padding: 70px 0;
+  }
+  section .grid-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "one" "two " "three" "four" "five";
+    gap: 24px 30px;
+  }
+  section .grid-container .one {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: one;
+    height: auto;
+  }
+  section .grid-container .two {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: two;
+    height: auto;
+  }
+  section .grid-container .three {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: three;
+    height: auto;
+  }
+  section .grid-container .four {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: four;
+    height: auto;
+  }
+  section .grid-container .five {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: five;
+    height: auto;
+  }
+}
+/*# sourceMappingURL=main.css.map */
