@@ -1,0 +1,30 @@
+// colors ----------
+// Primary - linear gradient
+$Linear-1: #a3a8f0;
+$Linear-2: #696fdd;
+
+// $LinearGradient: linear-gradient(to right, #787de2, #696fdd);
+$LinearGradient: linear-gradient(to right, #959aec, #868be7, #787de2, #696fdd);
+
+$LinearGradient-2: linear-gradient(to right bottom, #868be7, #787de2, #696fdd);
+
+$btnWhite: linear-gradient(to right, #fff, #fff);
+
+// Neutral -
+$VeryLightGrayishBlue: hsl(240, 78%, 98%);
+$LightGrayishBlue: hsl(234, 14%, 74%);
+$GrayishBlue: hsl(233, 13%, 49%);
+$DarkGrayishBlue: hsl(232, 13%, 33%);
+
+// media query
+@mixin laptop {
+  @media (max-width: 1024.98px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 540.98px) {
+    @content;
+  }
+}
