@@ -1,0 +1,175 @@
+// Colors
+$Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+$Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+$Grayish-Blue: hsl(212, 23%, 69%);
+$Light-Grayish-Blue: hsl(210, 46%, 95%);
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  width: 100%;
+  height: 100%;
+  background-color: $Light-Grayish-Blue;
+}
+
+img {
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2,
+h3 {
+  font-weight: 700;
+  font-size: 1rem;
+  color: $Very-Dark-Grayish-Blue;
+}
+
+.container {
+  width: 730px;
+  min-height: 280px;
+  margin-top: 260px;
+  margin-bottom: 260px;
+  background-color: #fff;
+  overflow: hidden !important;
+  border-radius: 10px;
+
+  .box-img {
+    width: 100%;
+    height: 100%;
+    padding: 0 !important;
+    overflow: hidden !important;
+
+    img {
+      width: 120%;
+    }
+  }
+
+  .box-content {
+    padding: 35px;
+
+    h2 {
+      font-weight: 700;
+      font-size: 1.3rem;
+      line-height: 1.3;
+    }
+
+    p {
+      color: $Desaturated-Dark-Blue;
+    }
+  }
+
+  .share {
+    display: flex;
+    justify-content: space-between;
+
+    .img-1 {
+      width: 40px;
+      border-radius: 50%;
+    }
+
+    .name-area {
+      margin-right: auto;
+      margin-left: 16px;
+      h3 {
+        font-size: 14px;
+        margin: 2px 0 3px 0;
+        padding: 0;
+      }
+
+      p {
+        color: $Grayish-Blue;
+        font-size: 12px;
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+    .img-2-border {
+      width: 32px;
+      height: 32px;
+      background: $Grayish-Blue;
+      border-radius: 50%;
+
+      &:hover {
+        background-color: #6e8098;
+      }
+
+      .img-2 {
+        padding: 7px;
+      }
+    }
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 560px) and (min-width: 426px) {
+  .container {
+    max-width: 70%;
+    min-height: 585px;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+    .box-img {
+      height: 300px;
+
+      img {
+        max-width: 125%;
+      }
+    }
+
+    .box-content {
+      padding: 25px;
+      height: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 560px) {
+  .container {
+    max-width: 60%;
+    min-height: 100%;
+
+    .box-content {
+      padding: 25px;
+      height: 100%;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+    .box-img {
+      height: 200px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .box-content {
+      padding: 30px;
+    }
+  }
+}
