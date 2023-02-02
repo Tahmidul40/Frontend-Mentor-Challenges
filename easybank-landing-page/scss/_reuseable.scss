@@ -1,0 +1,46 @@
+// container
+.container {
+  max-width: 1110px;
+  margin: auto;
+
+  @include desktop {
+    margin: 0 25px;
+  }
+}
+
+// cta
+.cta {
+  width: 160px;
+  font-size: 1rem;
+  text-align: center;
+  padding: 12px 0;
+  background: linear-gradient(to right, ($Lime-Green, $Bright-Cyan));
+  border-radius: 26px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  .cta-item {
+    color: $White;
+    font-weight: 500;
+  }
+}
+
+// heading tag
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $Dark-Blue;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+// paragraph
+p {
+  color: $Grayish-Blue;
+  line-height: 1.4;
+}

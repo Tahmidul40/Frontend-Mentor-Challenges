@@ -1,0 +1,79 @@
+.blog {
+  min-height: 650px;
+
+  .wrapper {
+    padding: 95px 0 75px;
+
+    .title {
+      margin-bottom: 70px;
+
+      h2 {
+        font-size: 2.5rem;
+        font-weight: 500;
+        margin-bottom: 25px;
+
+        // media query
+        @include desktop {
+          text-align: center;
+        }
+      }
+
+      p {
+        width: 650px;
+
+        // media query
+        @include desktop {
+          width: 80%;
+          margin: auto;
+        }
+      }
+    }
+
+    .card-wrapper {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      // media query
+      @include desktop {
+        justify-content: space-evenly;
+      }
+
+      .card {
+        width: 255px;
+        margin-bottom: 65px;
+
+        img {
+          width: 100%;
+          height: 200px;
+          border-radius: 10px;
+          border-bottom-right-radius: 0;
+          border-bottom-left-radius: 0;
+        }
+
+        .card-text {
+          margin-top: 30px;
+          padding: 0px 25px;
+
+          h4 {
+            font-size: 0.75rem;
+            margin-bottom: 0;
+          }
+
+          h3 {
+            font-size: 1.2rem;
+            margin: 16px 0;
+
+            &:hover {
+              color: $Lime-Green;
+            }
+          }
+
+          p {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}

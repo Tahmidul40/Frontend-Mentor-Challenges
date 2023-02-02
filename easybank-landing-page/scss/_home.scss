@@ -1,0 +1,133 @@
+.home {
+  min-height: 660px;
+  background-color: $Very-Light-Gray;
+  position: relative;
+  &::before {
+    content: "";
+    width: 71%;
+    height: 145%;
+    background: url(../images/image-mockups.png);
+    background-position: right -110px top -130px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
+
+    // media query
+    @include desktop {
+      height: 135%;
+      background-position: right -185px top -150px;
+    }
+
+    // media query
+    @include laptop {
+      background-position: right -163px top -60px;
+    }
+
+    // media query
+    @include tablet {
+      content: none;
+    }
+
+    // media query
+    @include mobile {
+      content: "";
+      width: 100%;
+      height: 81%;
+      background: url(../images/image-mockups.png);
+      background-position: center -202px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      z-index: 1;
+    }
+  }
+
+  // background svg
+  .home-intro {
+    min-height: 660px;
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 200%;
+      background: url(../images/bg-intro-desktop.svg);
+      background-position: left;
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(50%, -30%);
+
+      // media query
+      @include tablet {
+        background-position: top -255px right -180px;
+        transform: translate(0, 0);
+      }
+
+      // media query
+      @include mobile {
+        height: 52%;
+        background: url(../images//bg-intro-mobile.svg);
+        background-repeat: no-repeat;
+        transform: translate(0%, -30%);
+        background-size: cover;
+      }
+    }
+  }
+
+  .wrapper {
+    width: 100%;
+    min-height: 660px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    @include mobile {
+      justify-content: center;
+      align-items: flex-end;
+      padding-bottom: 50px;
+      text-align: center;
+    }
+
+    .content {
+      width: 450px;
+
+      h1 {
+        font-size: 3.5rem;
+      }
+
+      p {
+        margin-bottom: 40px;
+      }
+
+      // media query
+      @include laptop {
+        width: 350px;
+
+        h1 {
+          font-size: 2.5rem;
+        }
+
+        p {
+          font-size: 1rem;
+          margin-bottom: 30px;
+        }
+      }
+
+      // media query
+      @include mobile {
+        .cta {
+          margin: auto;
+        }
+      }
+    }
+  }
+}

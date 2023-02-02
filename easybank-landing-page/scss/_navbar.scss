@@ -1,0 +1,161 @@
+@mixin largescreen {
+  @media only screen and(min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin smallscreen {
+  @media only screen and(max-width: 768px) {
+    @content;
+  }
+}
+
+// logo brand
+.logo {
+  width: 140px;
+  height: 21px;
+}
+
+// Navbar
+.navbar {
+  width: 100%;
+  min-height: 112px;
+
+  // media query
+  @include mobile {
+    min-height: 65px;
+  }
+
+  // Media Query for Desktop
+  @include largescreen {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .navbrand {
+    height: 112px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    // media query
+    @include mobile {
+      height: 65px;
+    }
+
+    .burger {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      &-close {
+        display: none;
+      }
+
+      &.active {
+        .burger-open {
+          display: none;
+        }
+        .burger-close {
+          display: flex;
+        }
+      }
+
+      // Media Query for Desktop
+      @include largescreen {
+        display: none;
+      }
+    }
+  }
+
+  .menu {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+
+    @media (min-width: 778.98px) {
+      height: 112px !important;
+    }
+
+    &-item {
+      margin: 0.7rem 0;
+
+      &:hover {
+        position: relative;
+        align-self: center;
+
+        &::after {
+          content: "";
+          width: 100%;
+          height: 4px;
+          background-color: $Lime-Green;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          transform: translate(0px, 45px);
+        }
+      }
+    }
+
+    &-link {
+      font-weight: 500;
+      color: $Grayish-Blue;
+      text-rendering: optimizeLegibility;
+      transition: all 0.35s ease;
+
+      &:hover {
+        color: $Dark-Blue;
+      }
+    }
+
+    &.active {
+      width: 100%;
+      height: 10rem;
+      margin: 1rem 0;
+    }
+
+    // Media Query for Desktop
+    @include largescreen {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+
+      &-item {
+        padding: 0;
+        margin: 0 0.5rem;
+      }
+    }
+  }
+
+  .cta {
+    width: 220px;
+    font-size: 1rem;
+    text-align: center;
+    padding: 12px 0;
+    background: linear-gradient(to right, ($Lime-Green, $Bright-Cyan));
+    border-radius: 26px;
+
+    .cta-item {
+      color: $White;
+      font-weight: 500;
+    }
+
+    &.active {
+      display: none;
+    }
+
+    // Media Query for Desktop
+    @include smallscreen {
+      display: none;
+    }
+  }
+}

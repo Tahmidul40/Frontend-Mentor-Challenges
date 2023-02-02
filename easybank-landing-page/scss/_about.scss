@@ -1,0 +1,69 @@
+.about {
+  min-height: 650px;
+  background: $Light-Grayish-Blue;
+
+  // media query
+  @include desktop {
+    text-align: center;
+  }
+
+  .wrapper {
+    padding: 110px 0;
+
+    .title {
+      margin-bottom: 70px;
+
+      h2 {
+        font-size: 2.5rem;
+        font-weight: 500;
+        margin-bottom: 25px;
+      }
+
+      p {
+        width: 650px;
+
+        // media query
+        @include desktop {
+          width: 80%;
+          margin: auto;
+        }
+      }
+    }
+
+    .card-wrapper {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      // media query
+      @include desktop {
+        justify-content: space-evenly;
+      }
+
+      .card {
+        width: 260px;
+        margin-bottom: 45px;
+
+        img {
+          width: 75px;
+          height: 75px;
+        }
+
+        h3 {
+          font-size: 1.7rem;
+          margin-top: 40px;
+
+          // media query
+          @include desktop {
+            margin-top: 30px;
+            margin-bottom: 25px;
+          }
+        }
+
+        p {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}

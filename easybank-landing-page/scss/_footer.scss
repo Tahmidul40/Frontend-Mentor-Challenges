@@ -1,0 +1,118 @@
+footer {
+  min-height: 190px;
+  background-color: $Dark-Blue;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+
+    // media query
+    @include tablet {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .left {
+      width: 50%;
+      display: flex;
+      justify-content: space-between;
+
+      // media query
+      @include tablet {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .logo-social {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .social-icon {
+          svg {
+            margin-right: 12px;
+          }
+
+          svg:hover {
+            path {
+              fill: $Lime-Green;
+            }
+          }
+
+          // media query
+          @include tablet {
+            margin-top: 30px;
+          }
+        }
+      }
+
+      .link {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+
+        // media query
+        @include tablet {
+          width: 100%;
+          flex-direction: column;
+          justify-content: center;
+          line-height: 2.2;
+          padding: 10px 0;
+        }
+
+        ul li a {
+          font-size: 1rem;
+          color: $Grayish-Blue;
+          line-height: 1.7;
+
+          &:hover {
+            color: $Lime-Green;
+          }
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .cta {
+        align-self: flex-end;
+
+        // media query
+        @include tablet {
+          align-self: center;
+          margin-bottom: 20px;
+        }
+      }
+
+      span {
+        color: $Grayish-Blue;
+      }
+    }
+  }
+
+  .attribution {
+    font-size: 13px;
+    text-align: center;
+    padding: 10px 0;
+    color: $Grayish-Blue;
+
+    a {
+      color: $White;
+
+      &:hover {
+        color: $Lime-Green;
+      }
+    }
+
+    // media query
+    @include tablet {
+      padding-top: 0;
+      padding-bottom: 10px;
+    }
+  }
+}
