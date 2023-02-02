@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <!-- css -->
+  <link rel="stylesheet" href="./dist/main.css" />
+  <title>Frontend Mentor | Project tracking intro component</title>
+</head>
+
+<body>
+  <section class="hero hero-top">
+    <div class="container">
+      <header class="header">
+        <nav class="navbar">
+          <div class="logo nav-logo">
+            <img src="./images/logo.svg" alt="logo" />
+          </div>
+
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Product</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Features</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" style="color: #a0a1ac">.</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" style="color: #a0a1ac">Login</a>
+            </li>
+          </ul>
+
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </header>
+    </div>
+  </section>
+
+  <section class="hero2" id="hero">
+    <div class="wrapper">
+      <div class="hero-text">
+        <h3><span>New</span>Monograph Dashboard</h3>
+        <h1>
+          Powerful insights <br />
+          into your team
+        </h1>
+        <p>
+          Project planning and time tracking <br />
+          for agile teams
+        </p>
+      </div>
+      <div class="hero__btn">
+        <a href="#" class="btn">Schedule a demo</a>
+        <span>to see a live preview</span>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+        href="http://github.com/tahmidul40">Tahmidul</a>.
+    </p>
+  </footer>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+    const heroTop = document.querySelector(".hero-top");
+
+    hamburger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+      heroTop.classList.toggle("active");
+    }
+  </script>
+</body>
+
+</html>
