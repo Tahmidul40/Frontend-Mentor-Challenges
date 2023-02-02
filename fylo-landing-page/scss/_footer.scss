@@ -1,0 +1,142 @@
+footer {
+  max-width: 100%;
+
+  .footer-top {
+    max-width: 100%;
+    padding: 100px 80px 80px 80px;
+    background: $Desaturated-Blue;
+    color: #fff;
+    display: flex;
+
+    .footer-top-left {
+      width: 54.999%;
+      h2 {
+        font-size: 36px;
+        font-family: $Raleway;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        color: #fff;
+      }
+
+      p {
+        max-width: 520px;
+        letter-spacing: 0.09px;
+        color: #fff;
+      }
+    }
+
+    .footer-top-right {
+      max-width: 44.999%;
+      form {
+        display: flex;
+        flex-direction: column;
+
+        input[type="email"] {
+          padding: 16px 275px 16px 20px;
+          border: none;
+          border-radius: 3px;
+          margin-bottom: 20px;
+        }
+
+        a {
+          max-width: 200px;
+          color: #fff;
+          background: $Bright-Blue;
+          font-weight: 700;
+          font-family: "Raleway";
+          padding: 16px 22px;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 80px 80px 50px;
+    color: #fff;
+    background: $Very-Dark-Blue;
+    font-family: $Open-Sans;
+
+    .logo img {
+      max-width: 165px;
+      padding-bottom: 30px;
+    }
+
+    .footer-bottom-flex {
+      display: flex;
+      justify-content: space-between;
+
+      a {
+        color: #fff;
+
+        &:hover {
+          color: $Bright-Blue;
+        }
+      }
+
+      .footer-address {
+        line-height: 2;
+        letter-spacing: 1px;
+      }
+
+      .footer-links {
+        width: 350px;
+        line-height: 2;
+        letter-spacing: 1px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .footer-icons {
+        ul {
+          li {
+            display: inline;
+            margin-left: 10px;
+
+            a {
+              i {
+                border: 1px solid #fff;
+                border-radius: 50%;
+
+                &:first-child {
+                  padding: 9px 13px;
+                }
+
+                &:nth-child(2) {
+                  padding: 9px 12px;
+                }
+
+                &:last-child {
+                  padding: 9px 12px;
+                }
+
+                &:hover {
+                  color: $Bright-Blue;
+                  border-color: $Bright-Blue;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// attribution fornt end
+.attri-fontend {
+  background: $Very-Dark-Blue;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  .attribution {
+    color: #fff;
+    font-size: 11px;
+    text-align: center;
+    a {
+      color: rgb(0, 132, 255);
+    }
+  }
+}

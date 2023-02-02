@@ -1,0 +1,17 @@
+header {
+  max-width: 100%;
+  height: 100%;
+  padding: 65px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo img {
+    max-width: 165px;
+  }
+
+  nav ul li {
+    display: inline;
+    margin-left: 60px;
+  }
+}

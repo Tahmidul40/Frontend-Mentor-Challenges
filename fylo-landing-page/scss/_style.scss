@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+  font-size: 1rem;
+  font-family: $Open-Sans;
+
+  img {
+    width: 100%;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+    font-family: $Raleway;
+    font-weight: 400;
+  }
+
+  li {
+    list-style-type: none;
+  }
+}
