@@ -1,0 +1,175 @@
+@font-face {
+  font-family: HankenGrotesk;
+  src: url(.././../../assets/fonts/HankenGrotesk-VariableFont_wght.ttf) format("truetype");
+}
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "HankenGrotesk", sans-serif;
+  font-size: 18px;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+.container .your-result {
+  text-align: center;
+  padding: 1.875rem;
+  background-image: linear-gradient(to bottom, hsl(252deg, 100%, 67%), hsl(241deg, 81%, 54%));
+  color: hsl(0deg, 0%, 100%);
+  border-bottom-left-radius: 1.875rem;
+  border-bottom-right-radius: 1.875rem;
+}
+.container .your-result h1 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: hsl(241deg, 100%, 89%);
+  margin-bottom: 1.875rem;
+}
+.container .your-result .score {
+  margin-bottom: 1.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .your-result .score .circle {
+  display: inline-block;
+  padding: 2.1875rem 2.8125rem;
+  border-radius: 50%;
+  background-image: linear-gradient(to bottom, hsl(256deg, 72%, 46%), hsla(241deg, 72%, 46%, 0));
+}
+.container .your-result .score .circle h2 {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+.container .your-result .score .circle p {
+  font-size: 0.9375rem;
+  margin: 0;
+}
+.container .your-result h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.625rem;
+}
+.container .your-result .desc {
+  margin-top: 0;
+}
+.container .summary {
+  padding: 1.875rem;
+}
+.container .summary h2 {
+  color: hsl(224deg, 30%, 27%);
+  font-size: 1.5rem;
+  margin-bottom: 1.875rem;
+}
+.container .summary .point-wrap {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+.container .summary .point-wrap img {
+  margin-right: 0.875rem;
+}
+.container .summary .point-wrap h3 {
+  margin: 0;
+  font-size: 1.0625rem;
+}
+.container .summary .point-wrap .point {
+  margin-left: auto;
+  font-weight: 700;
+}
+.container .summary .point-wrap .point span {
+  color: hsla(224deg, 30%, 27%, 0.749);
+}
+.container .summary .reaction {
+  background-color: hsla(0deg, 100%, 67%, 0.2);
+}
+.container .summary .memory {
+  background-color: hsla(39deg, 100%, 56%, 0.2);
+}
+.container .summary .verbal {
+  background-color: hsla(166deg, 100%, 37%, 0.2);
+}
+.container .summary .visual {
+  background-color: hsla(234deg, 85%, 45%, 0.2);
+}
+.container .summary .btn {
+  width: 100%;
+  padding: 1.25rem;
+  border-radius: 2.5rem;
+  border: none;
+  background-color: hsl(224deg, 30%, 27%);
+  font-size: 1.25rem;
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 500;
+}
+.container .summary .btn:hover {
+  background-image: linear-gradient(to bottom, hsl(252deg, 100%, 67%), hsl(241deg, 81%, 54%));
+}
+
+@media (min-width: 48em) {
+  .container {
+    display: flex;
+    width: 740px;
+    margin-inline: auto;
+    padding: 280px 0;
+  }
+  .container .your-result {
+    width: 369.98px;
+    border-radius: 2.5rem;
+    padding: 3.125rem 3.75rem;
+  }
+  .container .your-result h1 {
+    font-size: 1.5rem;
+  }
+  .container .your-result .score .circle h2 {
+    font-size: 4.75rem;
+  }
+  .container .your-result .score .circle p {
+    font-size: 1.125rem;
+  }
+  .container .your-result h3 {
+    margin-bottom: 1.875rem;
+  }
+  .container .summary {
+    border-top-right-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+    width: 369.98px;
+    padding: 3.125rem 1.875rem;
+    box-shadow: 11px 10px 25px -9px rgb(219, 228, 255);
+  }
+  .container .summary .btn {
+    margin-top: 10px;
+  }
+}
+footer {
+  font-size: 11px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+footer a {
+  color: hsl(228deg, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */

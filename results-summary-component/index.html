@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <!-- page title -->
+    <title>Frontend Mentor | Results summary component</title>
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="./dist/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <section class="your-result">
+          <h1>Your Result</h1>
+          <div class="score">
+            <div class="circle">
+              <h2>76</h2>
+              <p>of 100</p>
+            </div>
+          </div>
+          <h3>Great</h3>
+          <p class="desc">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </section>
+
+        <section class="summary">
+          <h2>Summary</h2>
+          <div id="point-el" class="point-wrap reaction">
+            <img src="./assets/images/icon-reaction.svg" alt="" />
+            <h3>Reaction</h3>
+            <div class="point">80 <span>/ 100</span></div>
+          </div>
+
+          <div id="point-el" class="point-wrap memory">
+            <img src="./assets/images/icon-memory.svg" alt="" />
+            <h3>Memory</h3>
+            <div class="point">92 <span>/ 100</span></div>
+          </div>
+
+          <div id="point-el" class="point-wrap verbal">
+            <img src="./assets/images/icon-verbal.svg" alt="" />
+            <h3>Verbal</h3>
+            <div class="point">61 <span>/ 100</span></div>
+          </div>
+
+          <div id="point-el" class="point-wrap visual">
+            <img src="./assets/images/icon-visual.svg" alt="" />
+            <h3>Visual</h3>
+            <div class="point">72 <span>/ 100</span></div>
+          </div>
+
+          <button class="btn">Continue</button>
+        </section>
+      </div>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Tahmidul40</a>.
+    </footer>
+  </body>
+</html>
